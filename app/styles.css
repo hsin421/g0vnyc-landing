@@ -1,0 +1,21 @@
+.hero {
+  background: url('./images/home_cover.jpg') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 540px;
+}
+
+.heading {
+	color: #009c00;
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.bodyText {
+	color: #444;
+	font-size: 16px;
+}
+
+.icon {
+	height: 65px;
+}
