@@ -13,3 +13,6 @@ Static image
 
 Please help this page go up ASAP :)
 
+## Resources
+- [MUICSS](https://www.muicss.com/)
+- [ReactJS](https://facebook.github.io/react/)
