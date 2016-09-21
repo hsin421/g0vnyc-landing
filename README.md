@@ -5,7 +5,7 @@ Click [here](https://www.dropbox.com/sh/g100rqg9bu9xpm8/AACjCA01Ywf9pDVQnHjlS9TR
 Static image
 ![alt text](g0v_home.jpg "Landing Page static")
 
-## To set up
+## To set up and contribute
 - `git clone` this repo
 - `npm install`
 - `npm run dev`
