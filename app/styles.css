@@ -1,3 +1,7 @@
+.bar {
+  padding: 0 20px;
+}
+
 .hero {
   background: url('./images/home_cover.jpg') no-repeat center center;
   background-attachment: fixed;
@@ -5,17 +9,21 @@
   height: 540px;
 }
 
+.body {
+  text-align: center;
+}
+
 .heading {
-	color: #009c00;
-	font-size: 32px;
-	font-weight: 900;
+  color: #009c00;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .bodyText {
-	color: #444;
-	font-size: 16px;
+  color: #444;
+  font-size: 16px;
 }
 
 .icon {
-	height: 65px;
+  height: 65px;
 }
