@@ -1,10 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
+
 import Appbar from 'muicss/lib/react/appbar';
 import Button from 'muicss/lib/react/button';
 import Container from 'muicss/lib/react/container';
+import Divider from 'muicss/lib/react/divider';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
+
 import styles from './styles.css';
 import calendarIcon from './images/icon_event.png';
 import sponsorIcon from './images/icon_sponsors.png';
@@ -16,11 +19,15 @@ class Example extends React.Component {
   render() {
     return (
       <div>
-        <Appbar>
-        	<img src={logo} height={60} />
+        <Appbar className={styles.bar}>
+          <Row>
+            <Col md="8">
+              <img src={logo} height="60px" />
+            </Col>
+          </Row>
         </Appbar>
         <div className={styles.hero} />
-        <Container>
+        <Container className={styles.body}>
         	<Row>
 	          <Col md="6" md-offset="3">
 	          <h3 className={styles.heading}>「紐」轉台灣 g0v黑客松</h3>
@@ -28,6 +35,7 @@ class Example extends React.Component {
 	          <Button color="primary">活動詳情</Button>
 	          </Col>
           </Row>
+          <Divider />
           <Row>
         	<Col md="4" md-offset="4">
         		<img src={calendarIcon} className={styles.icon} />
