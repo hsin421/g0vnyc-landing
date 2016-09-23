@@ -38,6 +38,12 @@
 .bodyText {
   color: #444;
   font-size: 16px;
+  font-weight: 300;
+}
+
+.bodyTextBold {
+  composes: bodyText;
+  font-weight: 700;
 }
 
 .bodyTextBottom {
@@ -99,6 +105,21 @@
   margin: 0;
 }
 
+.speakerImgLin {
+  composes: speakerImg;
+  background: url('http://img.epochtimes.com.tw/upload/images/2014/06/29/95462_medium.jpg') no-repeat center center;
+}
+
+.speakerImgKao {
+  composes: speakerImg;
+  background: url('./images/kao2.jpg') no-repeat center center;
+}
+
+.speakerImgNicklin {
+  composes: speakerImg;
+  background: url('https://govex.jhu.edu/content/uploads/2016/01/400x400-andrew-n.jpg') no-repeat center center;
+}
+
 .speakerSubtitle {
   composes: speakerTitle;
   font-size: 16px;
@@ -108,4 +129,8 @@
 
 .footer {
   background-color: #333;
+}
+
+.footerLogo {
+  margin-top: 20px;
 }

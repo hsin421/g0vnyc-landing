@@ -14,6 +14,7 @@ import sponsorIcon from './images/icon_sponsors.png';
 import speakersIcon from './images/icon_speakers.png';
 import mapImg from './images/map.jpg';
 import logo from './images/organized_g0v.png';
+import logoDark from './images/g0v_logo_dark.png';
 import cafePhiloLogo from './images/organized_cafe_philo.png';
 
 class LandingPage extends React.Component {
@@ -26,7 +27,7 @@ class LandingPage extends React.Component {
               <img src={logo} height="60px" />
             </Col>
             <Col md="4" className={styles.appBarText}>
-            	<span> 活動資訊 </span>
+            	<span> </span>
             </Col>
             <Col md="4" className={styles.appBarText}>
             	<span> 中文 | ENGLISH </span>
@@ -43,7 +44,10 @@ class LandingPage extends React.Component {
               <p className={styles.bodyText}> 你有一堆想讓這社會更好的創意點子嗎？ </p>
               <p className={styles.bodyText}> 你知道座落在海外關於台灣的神秘檔案已經逐一開放，等這我們去探詢嗎？ </p>
               <p className={styles.bodyText}> 海外的大秘寶需要熱血如你 一身絕技如你來參與 </p>
-              <Button color="primary">活動詳情</Button>
+              <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
+              		target="_blank">
+            		<Button color="primary">我要報名</Button>
+            	</a>
 	          </Col>
           </Row>
           <Divider />
@@ -53,15 +57,28 @@ class LandingPage extends React.Component {
           		<h3 className={styles.heading}> 活動資訊 </h3>
           	</Col>
             <Col md="6">
-            	<img src={mapImg} width="100%" />
+            	<a href="https://www.google.com/maps/place/1460+Broadway,+New+York,+NY+10036/@40.7551113,-73.9884183,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ab29218823:0x9ed7f9958f0596ca!8m2!3d40.7551073!4d-73.9862243" target="_blank">
+            		<img src={mapImg} width="100%" />
+            	</a>
             </Col>
             <Col md="6" className={styles.eventInfo}>
             	<h4 className={styles.infoLabel}>資訊</h4>
-            	<p> 哈哈哈哈哈</p>
+            	<p className={styles.bodyTextBold}> 11/5 (Sat) - 11/6 (Sun) </p>
+            	<p className={styles.bodyText}>Overnight optional</p>
             	<h4 className={styles.infoLabel}>地點</h4>
-            	<p>哈哈哈哈哈</p>
+            	<p className={styles.bodyTextBold}>NYC WeWork Times Square</p>
+            	<p className={styles.bodyText}>1460 Broadway, NY 10036</p>
             	<h4 className={styles.infoLabel}>招募對象</h4>
-            	<p>哈哈哈哈哈</p>
+            	<p className={styles.bodyTextBold}>熱血如火的你！</p>
+            	<p className={styles.bodyText}>請自備電腦</p>
+            	<h4 className={styles.infoLabel}>還有問題？</h4>
+            	<p className={styles.bodyText}>我們寫了一個 
+            	<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq" target="_blank">
+            	{' chatbot'}</a> 來回答你的問題，試試看吧！</p>
+            	<a href="https://m.me/g0vus" 
+              		target="_blank">
+              	<Button color="primary">我有問題</Button>
+              </a>
             </Col>
           </Row>
           <Row>
@@ -69,8 +86,13 @@ class LandingPage extends React.Component {
           	  <Col md="4" md-offset="4">
                 <img src={sponsorIcon} className={styles.icon} />
               	<h3 className={styles.heading}> 贊助我們 </h3>
-              	<p className={styles.bodyTextWhite}> 我們除了需要財務資源，也希望透過貴單位的通訊方式...</p>
-              	<Button color="accent">贊助資訊</Button>
+              	<p className={styles.bodyTextWhite}> 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述⺫標更近⼀步。
+活動結束後，我們會將財務明細以及成果報告⽤電⼦郵件的⽅式寄給貴組織，
+持續分享各個專案的開發進度與成果。</p>
+              	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
+              		target="_blank">
+              		<Button color="accent">贊助資訊</Button>
+              	</a>
               </Col>
             </div>
           </Row>
@@ -83,35 +105,38 @@ class LandingPage extends React.Component {
 	      	<Row className={styles.speakerSection}>
 	      		<Col md="4">
               <div className={styles.speakerCard}>
-                <div className={styles.speakerImg}>
+                <div className={styles.speakerImgLin}>
                 </div>
                 <div className={styles.speakerInfo}>
-	      			   <h5 className={styles.speakerTitle}>Speaker</h5>
-                 <p className={styles.speakerSubtitle}>subtitle</p>
+	      			   <h5 className={styles.speakerTitle}>林雨蒼</h5>
+                 <p className={styles.speakerSubtitle}>民間司法改革基金會</p>
+                 <p className={styles.speakerSubtitle}>行政院不當黨產委員會</p>
                 </div>
               </div>
 	      		</Col>
 	      		<Col md="4">
 	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImg}>
+                <div className={styles.speakerImgKao}>
                 </div>
                 <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>Speaker</h5>
-                 <p className={styles.speakerSubtitle}>subtitle</p>
+                 <h5 className={styles.speakerTitle}>高嘉良</h5>
+                 <p className={styles.speakerSubtitle}>G0V 創始人</p>
+                 <p className={styles.speakerSubtitle}>台灣開源社群 長老</p>
                 </div>
               </div>
 	      		</Col>
 	      		<Col md="4">
 	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImg}>
+                <div className={styles.speakerImgNicklin}>
                 </div>
                 <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>Speaker</h5>
-                 <p className={styles.speakerSubtitle}>subtitle</p>
+                 <h5 className={styles.speakerTitle}>Andrew Nicklin</h5>
+                 <p className={styles.speakerSubtitle}>Center for Gov. Excellence, JHU</p>
+                 <p className={styles.speakerSubtitle}>Former Director, Open NY</p>
                 </div>
               </div>
 	      		</Col>
-	      		<Button color="primary" className={styles.speakerButton}>認識講者</Button>
+	      		{/*<Button color="primary" className={styles.speakerButton}>認識講者</Button>*/}
       		</Row>
       		<Row>
       			<Col md="4" md-offset="4">
@@ -138,8 +163,8 @@ class LandingPage extends React.Component {
         </Container>
         <Appbar className={styles.footer}>
           <Row>
-            <Col md="8">
-              I am footer
+            <Col md="3" md-offset="1">
+              <img src={logoDark} height="20px" className={styles.footerLogo}/>
             </Col>
           </Row>
         </Appbar>
