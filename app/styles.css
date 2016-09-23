@@ -4,9 +4,15 @@
 
 .hero {
   background: url('./images/home_cover.jpg') no-repeat center center;
+  height: 540px;
+}
+
+.sponsor {
+  composes: hero;
+  width: 100%;
+  background: url('./images/g0v_nyc_green_texture.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  height: 540px;
 }
 
 .body {
@@ -17,6 +23,7 @@
   color: #009c00;
   font-size: 32px;
   font-weight: 900;
+  margin: 30px;
 }
 
 .bodyText {
@@ -24,6 +31,41 @@
   font-size: 16px;
 }
 
+.bodyTextBottom {
+  composes: bodyText;
+  margin-bottom: 60px;
+}
+
 .icon {
   height: 65px;
+}
+
+.speakerCard {
+  height: 450px;
+  width: 100%;
+}
+
+.speakerImg {
+  height: 300px;
+  background-color: #444;
+}
+
+.speakerTitle {
+  composes: heading;
+  font-size: 20px;
+  text-align: left;
+}
+
+.speakerSubtitle {
+  composes: speakerTitle;
+  font-size: 16px;
+  color: #444;
+}
+
+.speakerSection {
+  background-color: rgb(237, 238, 239);
+}
+
+.footer {
+  background-color: #333;
 }

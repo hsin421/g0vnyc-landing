@@ -14,6 +14,7 @@ import sponsorIcon from './images/icon_sponsors.png';
 import speakersIcon from './images/icon_speakers.png';
 import mapImg from './images/map.jpg';
 import logo from './images/organized_g0v.png';
+import cafePhiloLogo from './images/organized_cafe_philo.png';
 
 class Example extends React.Component {
   render() {
@@ -29,10 +30,14 @@ class Example extends React.Component {
         <div className={styles.hero} />
         <Container className={styles.body}>
         	<Row>
-	          <Col md="6" md-offset="3">
-	          <h3 className={styles.heading}>「紐」轉台灣 g0v黑客松</h3>
-	          <p className={styles.bodyText}> 哈哈哈哈哈 哈哈哈哈哈 哈哈哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-	          <Button color="primary">活動詳情</Button>
+	          <Col md="8" md-offset="2">
+  	          <h3 className={styles.heading}>「紐」轉台灣 g0v黑客松</h3>
+  	          <p className={styles.bodyText}> 『不能沒有你！』你有一身程式設計的絕技卻渴望能一展身手嗎？ </p>
+  	          <p className={styles.bodyText}> 你的UI/UX與設計長才想讓更多人看見嗎？ </p>
+              <p className={styles.bodyText}> 你有一堆想讓這社會更好的創意點子嗎？ </p>
+              <p className={styles.bodyText}> 你知道座落在海外關於台灣的神秘檔案已經逐一開放，等這我們去探詢嗎？ </p>
+              <p className={styles.bodyText}> 海外的大秘寶需要熱血如你 一身絕技如你來參與 </p>
+              <Button color="primary">活動詳情</Button>
 	          </Col>
           </Row>
           <Divider />
@@ -53,54 +58,87 @@ class Example extends React.Component {
           	<p>哈哈哈哈哈</p>
           </Col>
           </Row>
+          <Divider />
           <Row>
+          <div className={styles.sponsor}>
       	  <Col md="4" md-offset="4">
-      	  	<img src={sponsorIcon} className={styles.icon} />
-        		<h3 className={styles.heading}> 贊助我們 </h3>
-        		<p> 哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈 哈哈哈哈哈</p>
-        	  <Button color="primary">button</Button>
+        	  	<img src={sponsorIcon} className={styles.icon} />
+          		<h3 className={styles.heading}> 贊助我們 </h3>
+          		<p> 哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈 哈哈哈哈哈</p>
+          	  <Button color="primary">button</Button>
           </Col>
+          </div>
           </Row>
-          <Row>
+          <Divider />
+          <Row className={styles.speakerSection}>
 	          <Col md="4" md-offset="4">
 	    	  		<img src={speakersIcon} className={styles.icon} />
 	      			<h3 className={styles.heading}> 邀請講者 </h3>
 	      		</Col>
 	      	</Row>
-	      	<Row>
+	      	<Row className={styles.speakerSection}>
 	      		<Col md="4">
-	      			Speaker
+              <div className={styles.speakerCard}>
+                <div className={styles.speakerImg}>
+                </div>
+                <div>
+	      			   <h5 className={styles.speakerTitle}>Speaker</h5>
+                 <p className={styles.speakerSubtitle}>subtitle</p>
+                </div>
+              </div>
 	      		</Col>
 	      		<Col md="4">
-	      			Speaker
+	      			<div className={styles.speakerCard}>
+                <div className={styles.speakerImg}>
+                </div>
+                <div>
+                 <h5 className={styles.speakerTitle}>Speaker</h5>
+                 <p className={styles.speakerSubtitle}>subtitle</p>
+                </div>
+              </div>
 	      		</Col>
 	      		<Col md="4">
-	      			Speaker
+	      			<div className={styles.speakerCard}>
+                <div className={styles.speakerImg}>
+                </div>
+                <div>
+                 <h5 className={styles.speakerTitle}>Speaker</h5>
+                 <p className={styles.speakerSubtitle}>subtitle</p>
+                </div>
+              </div>
 	      		</Col>
       		</Row>
+          <Divider />
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> 主辦單位 </h3>
       			</Col>
       			<Col md="6">
-      				G0V logo
+      				<img src={logo} height="100px" />
       			</Col>
       			<Col md="6">
-      				Cafe philo logo
+      				<img src={cafePhiloLogo} height="100px" />
       			</Col>
       		</Row>
+          <Divider />
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> 贊助單位 </h3>
       			</Col>
-      			<Col md="4" md-offset="4">
-      				海台青 | 里達律師事務所 | C Bao
+      			<Col md="8" md-offset="2">
+              <div className={styles.bodyTextBottom}>
+      				  海台青 | 美東G0V | 里達律師事務所 | C Bao 餐館 | Taiwan Bear
+              </div>
       			</Col>
       		</Row>
-      		<footer>
-      			I am footer
-      		</footer>
         </Container>
+        <Appbar className={styles.footer}>
+          <Row>
+            <Col md="8">
+              I am footer
+            </Col>
+          </Row>
+        </Appbar>
       </div>
     );
   }
