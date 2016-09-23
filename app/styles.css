@@ -54,6 +54,11 @@
   font-weight: 600;
 }
 
+.speakerButton {
+  background-color: #efedee;
+  margin-bottom: 40px;
+}
+
 .icon {
   height: 65px;
 }

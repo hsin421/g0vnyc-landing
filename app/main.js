@@ -64,7 +64,7 @@ class LandingPage extends React.Component {
                 <img src={sponsorIcon} className={styles.icon} />
               	<h3 className={styles.heading}> 贊助我們 </h3>
               	<p className={styles.bodyTextWhite}> 我們除了需要財務資源，也希望透過貴單位的通訊方式...</p>
-              	<Button color="primary">贊助資訊</Button>
+              	<Button color="accent">贊助資訊</Button>
               </Col>
             </div>
           </Row>
@@ -105,6 +105,7 @@ class LandingPage extends React.Component {
                 </div>
               </div>
 	      		</Col>
+	      		<Button color="primary" className={styles.speakerButton}>認識講者</Button>
       		</Row>
       		<Row>
       			<Col md="4" md-offset="4">
