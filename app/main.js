@@ -143,10 +143,16 @@ class LandingPage extends React.Component {
       				<h3 className={styles.heading}> 主辦單位 </h3>
       			</Col>
       			<Col md="6">
-      				<img src={logo} height="100px" />
+      				<a href="http://g0v.tw" 
+              		target="_blank">
+      					<img src={logo} height="100px" />
+      				</a>
       			</Col>
       			<Col md="6">
-      				<img src={cafePhiloLogo} height="100px" />
+      				<a href="https://www.facebook.com/cafephiloatNY/" 
+              		target="_blank">
+      					<img src={cafePhiloLogo} height="100px" />
+      				</a>
       			</Col>
       		</Row>
           <Divider />

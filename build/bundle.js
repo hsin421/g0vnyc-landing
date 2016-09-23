@@ -55,17 +55,480 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var _react = __webpack_require__(2);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	var _reactDom = __webpack_require__(35);
 
-	var App = function App() {
-	  return _react2['default'].createElement('h1', {}, 'Hello Universe');
-	};
+	var _muicssLibReactAppbar = __webpack_require__(173);
 
-	_reactDom.render(_react2['default'].createElement(App, null), document.getElementById('app'));
+	var _muicssLibReactAppbar2 = _interopRequireDefault(_muicssLibReactAppbar);
+
+	var _muicssLibReactButton = __webpack_require__(175);
+
+	var _muicssLibReactButton2 = _interopRequireDefault(_muicssLibReactButton);
+
+	var _muicssLibReactContainer = __webpack_require__(179);
+
+	var _muicssLibReactContainer2 = _interopRequireDefault(_muicssLibReactContainer);
+
+	var _muicssLibReactDivider = __webpack_require__(180);
+
+	var _muicssLibReactDivider2 = _interopRequireDefault(_muicssLibReactDivider);
+
+	var _muicssLibReactRow = __webpack_require__(181);
+
+	var _muicssLibReactRow2 = _interopRequireDefault(_muicssLibReactRow);
+
+	var _muicssLibReactCol = __webpack_require__(182);
+
+	var _muicssLibReactCol2 = _interopRequireDefault(_muicssLibReactCol);
+
+	var _stylesCss = __webpack_require__(183);
+
+	var _stylesCss2 = _interopRequireDefault(_stylesCss);
+
+	var _imagesIcon_eventPng = __webpack_require__(190);
+
+	var _imagesIcon_eventPng2 = _interopRequireDefault(_imagesIcon_eventPng);
+
+	var _imagesIcon_sponsorsPng = __webpack_require__(191);
+
+	var _imagesIcon_sponsorsPng2 = _interopRequireDefault(_imagesIcon_sponsorsPng);
+
+	var _imagesIcon_speakersPng = __webpack_require__(192);
+
+	var _imagesIcon_speakersPng2 = _interopRequireDefault(_imagesIcon_speakersPng);
+
+	var _imagesMapJpg = __webpack_require__(193);
+
+	var _imagesMapJpg2 = _interopRequireDefault(_imagesMapJpg);
+
+	var _imagesOrganized_g0vPng = __webpack_require__(194);
+
+	var _imagesOrganized_g0vPng2 = _interopRequireDefault(_imagesOrganized_g0vPng);
+
+	var _imagesG0v_logo_darkPng = __webpack_require__(195);
+
+	var _imagesG0v_logo_darkPng2 = _interopRequireDefault(_imagesG0v_logo_darkPng);
+
+	var _imagesOrganized_cafe_philoPng = __webpack_require__(196);
+
+	var _imagesOrganized_cafe_philoPng2 = _interopRequireDefault(_imagesOrganized_cafe_philoPng);
+
+	var LandingPage = (function (_React$Component) {
+	  _inherits(LandingPage, _React$Component);
+
+	  function LandingPage() {
+	    _classCallCheck(this, LandingPage);
+
+	    _React$Component.apply(this, arguments);
+	  }
+
+	  LandingPage.prototype.render = function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _muicssLibReactAppbar2['default'],
+	        { className: _stylesCss2['default'].bar },
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '3', 'md-offset': '1' },
+	            _react2['default'].createElement('img', { src: _imagesOrganized_g0vPng2['default'], height: '60px' })
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', className: _stylesCss2['default'].appBarText },
+	            _react2['default'].createElement(
+	              'span',
+	              null,
+	              ' '
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', className: _stylesCss2['default'].appBarText },
+	            _react2['default'].createElement(
+	              'span',
+	              null,
+	              ' 中文 | ENGLISH '
+	            )
+	          )
+	        )
+	      ),
+	      _react2['default'].createElement('div', { className: _stylesCss2['default'].hero }),
+	      _react2['default'].createElement(
+	        _muicssLibReactContainer2['default'],
+	        { className: _stylesCss2['default'].body },
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '8', 'md-offset': '2' },
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: _stylesCss2['default'].heading },
+	              '「紐」轉台灣 g0v黑客松'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              ' 『不能沒有你！』你有一身程式設計的絕技卻渴望能一展身手嗎？ '
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              ' 你的UI/UX與設計長才想讓更多人看見嗎？ '
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              ' 你有一堆想讓這社會更好的創意點子嗎？ '
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              ' 你知道座落在海外關於台灣的神秘檔案已經逐一開放，等這我們去探詢嗎？ '
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              ' 海外的大秘寶需要熱血如你 一身絕技如你來參與 '
+	            ),
+	            _react2['default'].createElement(
+	              'a',
+	              { href: 'https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746',
+	                target: '_blank' },
+	              _react2['default'].createElement(
+	                _muicssLibReactButton2['default'],
+	                { color: 'primary' },
+	                '我要報名'
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(_muicssLibReactDivider2['default'], null),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', 'md-offset': '4' },
+	            _react2['default'].createElement('img', { src: _imagesIcon_eventPng2['default'], className: _stylesCss2['default'].icon }),
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: _stylesCss2['default'].heading },
+	              ' 活動資訊 '
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '6' },
+	            _react2['default'].createElement(
+	              'a',
+	              { href: 'https://www.google.com/maps/place/1460+Broadway,+New+York,+NY+10036/@40.7551113,-73.9884183,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ab29218823:0x9ed7f9958f0596ca!8m2!3d40.7551073!4d-73.9862243', target: '_blank' },
+	              _react2['default'].createElement('img', { src: _imagesMapJpg2['default'], width: '100%' })
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '6', className: _stylesCss2['default'].eventInfo },
+	            _react2['default'].createElement(
+	              'h4',
+	              { className: _stylesCss2['default'].infoLabel },
+	              '資訊'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyTextBold },
+	              ' 11/5 (Sat) - 11/6 (Sun) '
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              'Overnight optional'
+	            ),
+	            _react2['default'].createElement(
+	              'h4',
+	              { className: _stylesCss2['default'].infoLabel },
+	              '地點'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyTextBold },
+	              'NYC WeWork Times Square'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              '1460 Broadway, NY 10036'
+	            ),
+	            _react2['default'].createElement(
+	              'h4',
+	              { className: _stylesCss2['default'].infoLabel },
+	              '招募對象'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyTextBold },
+	              '熱血如火的你！'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              '請自備電腦'
+	            ),
+	            _react2['default'].createElement(
+	              'h4',
+	              { className: _stylesCss2['default'].infoLabel },
+	              '還有問題？'
+	            ),
+	            _react2['default'].createElement(
+	              'p',
+	              { className: _stylesCss2['default'].bodyText },
+	              '我們寫了一個',
+	              _react2['default'].createElement(
+	                'a',
+	                { href: 'https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq', target: '_blank' },
+	                ' chatbot'
+	              ),
+	              ' 來回答你的問題，試試看吧！'
+	            ),
+	            _react2['default'].createElement(
+	              'a',
+	              { href: 'https://m.me/g0vus',
+	                target: '_blank' },
+	              _react2['default'].createElement(
+	                _muicssLibReactButton2['default'],
+	                { color: 'primary' },
+	                '我有問題'
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            'div',
+	            { className: _stylesCss2['default'].sponsor },
+	            _react2['default'].createElement(
+	              _muicssLibReactCol2['default'],
+	              { md: '4', 'md-offset': '4' },
+	              _react2['default'].createElement('img', { src: _imagesIcon_sponsorsPng2['default'], className: _stylesCss2['default'].icon }),
+	              _react2['default'].createElement(
+	                'h3',
+	                { className: _stylesCss2['default'].heading },
+	                ' 贊助我們 '
+	              ),
+	              _react2['default'].createElement(
+	                'p',
+	                { className: _stylesCss2['default'].bodyTextWhite },
+	                ' 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述⺫標更近⼀步。 活動結束後，我們會將財務明細以及成果報告⽤電⼦郵件的⽅式寄給貴組織， 持續分享各個專案的開發進度與成果。'
+	              ),
+	              _react2['default'].createElement(
+	                'a',
+	                { href: 'https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon',
+	                  target: '_blank' },
+	                _react2['default'].createElement(
+	                  _muicssLibReactButton2['default'],
+	                  { color: 'accent' },
+	                  '贊助資訊'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          { className: _stylesCss2['default'].speakerHeader },
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', 'md-offset': '4' },
+	            _react2['default'].createElement('img', { src: _imagesIcon_speakersPng2['default'], className: _stylesCss2['default'].icon }),
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: _stylesCss2['default'].heading },
+	              ' 邀請講者 '
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          { className: _stylesCss2['default'].speakerSection },
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4' },
+	            _react2['default'].createElement(
+	              'div',
+	              { className: _stylesCss2['default'].speakerCard },
+	              _react2['default'].createElement('div', { className: _stylesCss2['default'].speakerImgLin }),
+	              _react2['default'].createElement(
+	                'div',
+	                { className: _stylesCss2['default'].speakerInfo },
+	                _react2['default'].createElement(
+	                  'h5',
+	                  { className: _stylesCss2['default'].speakerTitle },
+	                  '林雨蒼'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  '民間司法改革基金會'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  '行政院不當黨產委員會'
+	                )
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4' },
+	            _react2['default'].createElement(
+	              'div',
+	              { className: _stylesCss2['default'].speakerCard },
+	              _react2['default'].createElement('div', { className: _stylesCss2['default'].speakerImgKao }),
+	              _react2['default'].createElement(
+	                'div',
+	                { className: _stylesCss2['default'].speakerInfo },
+	                _react2['default'].createElement(
+	                  'h5',
+	                  { className: _stylesCss2['default'].speakerTitle },
+	                  '高嘉良'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  'G0V 創始人'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  '台灣開源社群 長老'
+	                )
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4' },
+	            _react2['default'].createElement(
+	              'div',
+	              { className: _stylesCss2['default'].speakerCard },
+	              _react2['default'].createElement('div', { className: _stylesCss2['default'].speakerImgNicklin }),
+	              _react2['default'].createElement(
+	                'div',
+	                { className: _stylesCss2['default'].speakerInfo },
+	                _react2['default'].createElement(
+	                  'h5',
+	                  { className: _stylesCss2['default'].speakerTitle },
+	                  'Andrew Nicklin'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  'Center for Gov. Excellence, JHU'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  { className: _stylesCss2['default'].speakerSubtitle },
+	                  'Former Director, Open NY'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', 'md-offset': '4' },
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: _stylesCss2['default'].heading },
+	              ' 主辦單位 '
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '6' },
+	            _react2['default'].createElement(
+	              'a',
+	              { href: 'http://g0v.tw',
+	                target: '_blank' },
+	              _react2['default'].createElement('img', { src: _imagesOrganized_g0vPng2['default'], height: '100px' })
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '6' },
+	            _react2['default'].createElement(
+	              'a',
+	              { href: 'https://www.facebook.com/cafephiloatNY/',
+	                target: '_blank' },
+	              _react2['default'].createElement('img', { src: _imagesOrganized_cafe_philoPng2['default'], height: '100px' })
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(_muicssLibReactDivider2['default'], null),
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '4', 'md-offset': '4' },
+	            _react2['default'].createElement(
+	              'h3',
+	              { className: _stylesCss2['default'].heading },
+	              ' 贊助單位 '
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '8', 'md-offset': '2' },
+	            _react2['default'].createElement(
+	              'div',
+	              { className: _stylesCss2['default'].bodyTextBottom },
+	              '海台青 | 美東G0V | 里達律師事務所 | C Bao 餐館 | Taiwan Bear'
+	            )
+	          )
+	        )
+	      ),
+	      _react2['default'].createElement(
+	        _muicssLibReactAppbar2['default'],
+	        { className: _stylesCss2['default'].footer },
+	        _react2['default'].createElement(
+	          _muicssLibReactRow2['default'],
+	          null,
+	          _react2['default'].createElement(
+	            _muicssLibReactCol2['default'],
+	            { md: '3', 'md-offset': '1' },
+	            _react2['default'].createElement('img', { src: _imagesG0v_logo_darkPng2['default'], height: '20px', className: _stylesCss2['default'].footerLogo })
+	          )
+	        )
+	      )
+	    );
+	  };
+
+	  return LandingPage;
+	})(_react2['default'].Component);
+
+	_reactDom.render(_react2['default'].createElement(LandingPage, null), document.getElementById('app'));
+	/*<Button color="primary" className={styles.speakerButton}>認識講者</Button>*/
 
 /***/ },
 /* 2 */
@@ -21437,6 +21900,1932 @@
 
 	module.exports = ReactDOMNullInputValuePropHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React Appbar Module
+	 * @module react/appbar
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	/**
+	 * Appbar constructor
+	 * @class
+	 */
+	var Appbar = function (_React$Component) {
+	  babelHelpers.inherits(Appbar, _React$Component);
+
+	  function Appbar() {
+	    babelHelpers.classCallCheck(this, Appbar);
+	    return babelHelpers.possibleConstructorReturn(this, (Appbar.__proto__ || Object.getPrototypeOf(Appbar)).apply(this, arguments));
+	  }
+
+	  babelHelpers.createClass(Appbar, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props;
+	      var children = _props.children;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['children']);
+
+
+	      return _react2.default.createElement(
+	        'div',
+	        babelHelpers.extends({}, reactProps, {
+	          className: 'mui-appbar ' + this.props.className
+	        }),
+	        children
+	      );
+	    }
+	  }]);
+	  return Appbar;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	Appbar.defaultProps = {
+	  className: ''
+	};
+	exports.default = Appbar;
+	module.exports = exports['default'];
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports === "object") {
+	    factory(exports);
+	  } else {
+	    factory(root.babelHelpers = {});
+	  }
+	})(this, function (global) {
+	  var babelHelpers = global;
+
+	  babelHelpers.classCallCheck = function (instance, Constructor) {
+	    if (!(instance instanceof Constructor)) {
+	      throw new TypeError("Cannot call a class as a function");
+	    }
+	  };
+
+	  babelHelpers.createClass = function () {
+	    function defineProperties(target, props) {
+	      for (var i = 0; i < props.length; i++) {
+	        var descriptor = props[i];
+	        descriptor.enumerable = descriptor.enumerable || false;
+	        descriptor.configurable = true;
+	        if ("value" in descriptor) descriptor.writable = true;
+	        Object.defineProperty(target, descriptor.key, descriptor);
+	      }
+	    }
+
+	    return function (Constructor, protoProps, staticProps) {
+	      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	      if (staticProps) defineProperties(Constructor, staticProps);
+	      return Constructor;
+	    };
+	  }();
+
+	  babelHelpers.extends = Object.assign || function (target) {
+	    for (var i = 1; i < arguments.length; i++) {
+	      var source = arguments[i];
+
+	      for (var key in source) {
+	        if (Object.prototype.hasOwnProperty.call(source, key)) {
+	          target[key] = source[key];
+	        }
+	      }
+	    }
+
+	    return target;
+	  };
+
+	  babelHelpers.inherits = function (subClass, superClass) {
+	    if (typeof superClass !== "function" && superClass !== null) {
+	      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+	    }
+
+	    subClass.prototype = Object.create(superClass && superClass.prototype, {
+	      constructor: {
+	        value: subClass,
+	        enumerable: false,
+	        writable: true,
+	        configurable: true
+	      }
+	    });
+	    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	  };
+
+	  babelHelpers.interopRequireDefault = function (obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  };
+
+	  babelHelpers.interopRequireWildcard = function (obj) {
+	    if (obj && obj.__esModule) {
+	      return obj;
+	    } else {
+	      var newObj = {};
+
+	      if (obj != null) {
+	        for (var key in obj) {
+	          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+	        }
+	      }
+
+	      newObj.default = obj;
+	      return newObj;
+	    }
+	  };
+
+	  babelHelpers.objectWithoutProperties = function (obj, keys) {
+	    var target = {};
+
+	    for (var i in obj) {
+	      if (keys.indexOf(i) >= 0) continue;
+	      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+	      target[i] = obj[i];
+	    }
+
+	    return target;
+	  };
+
+	  babelHelpers.possibleConstructorReturn = function (self, call) {
+	    if (!self) {
+	      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	    }
+
+	    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+	  };
+	});
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React button module
+	 * @module react/button
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	var _jqLite = __webpack_require__(176);
+
+	var jqLite = babelHelpers.interopRequireWildcard(_jqLite);
+
+	var _util = __webpack_require__(177);
+
+	var util = babelHelpers.interopRequireWildcard(_util);
+
+
+	var PropTypes = _react2.default.PropTypes,
+	    btnClass = 'mui-btn',
+	    btnAttrs = { color: 1, variant: 1, size: 1 },
+	    animationDuration = 600;
+
+	/**
+	 * Button element
+	 * @class
+	 */
+
+	var Button = function (_React$Component) {
+	  babelHelpers.inherits(Button, _React$Component);
+
+	  function Button(props) {
+	    babelHelpers.classCallCheck(this, Button);
+
+	    var _this = babelHelpers.possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
+
+	    _this.state = {
+	      ripples: {}
+	    };
+
+	    _this.rippleTimers = [];
+
+	    var cb = util.callback;
+	    _this.onMouseDownCB = cb(_this, 'onMouseDown');
+	    _this.onMouseUpCB = cb(_this, 'onMouseUp');
+	    _this.onMouseLeaveCB = cb(_this, 'onMouseLeave');
+	    _this.onTouchStartCB = cb(_this, 'onTouchStart');
+	    _this.onTouchEndCB = cb(_this, 'onTouchEnd');
+	    return _this;
+	  }
+
+	  babelHelpers.createClass(Button, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // disable MUI js
+	      var el = this.refs.buttonEl;
+	      el._muiDropdown = true;
+	      el._muiRipple = true;
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      // clear ripple timers
+	      var timers = this.rippleTimers,
+	          i = timers.length;
+
+	      while (i--) {
+	        clearTimeout(timers[i]);
+	      }
+	    }
+	  }, {
+	    key: 'onMouseDown',
+	    value: function onMouseDown(ev) {
+	      this.addRipple(ev);
+
+	      // execute callback
+	      var fn = this.props.onMouseDown;
+	      fn && fn(ev);
+	    }
+	  }, {
+	    key: 'onMouseUp',
+	    value: function onMouseUp(ev) {
+	      this.removeRipples(ev);
+
+	      // execute callback
+	      var fn = this.props.onMouseUp;
+	      fn && fn(ev);
+	    }
+	  }, {
+	    key: 'onMouseLeave',
+	    value: function onMouseLeave(ev) {
+	      this.removeRipples(ev);
+
+	      // execute callback
+	      var fn = this.props.onMouseLeave;
+	      fn && fn(ev);
+	    }
+	  }, {
+	    key: 'onTouchStart',
+	    value: function onTouchStart(ev) {
+	      this.addRipple(ev);
+
+	      // execute callback
+	      var fn = this.props.onTouchStart;
+	      fn && fn(ev);
+	    }
+	  }, {
+	    key: 'onTouchEnd',
+	    value: function onTouchEnd(ev) {
+	      this.removeRipples(ev);
+
+	      // execute callback
+	      var fn = this.props.onTouchEnd;
+	      fn && fn(ev);
+	    }
+	  }, {
+	    key: 'addRipple',
+	    value: function addRipple(ev) {
+	      var buttonEl = this.refs.buttonEl;
+
+	      // de-dupe touch events
+	      if ('ontouchstart' in buttonEl && ev.type === 'mousedown') return;
+
+	      // get (x, y) position of click
+	      var offset = jqLite.offset(this.refs.buttonEl),
+	          clickEv = void 0;
+
+	      if (ev.type === 'touchstart' && ev.touches) clickEv = ev.touches[0];else clickEv = ev;
+
+	      // choose diameter
+	      var diameter = Math.sqrt(offset.width * offset.width + offset.height * offset.height) * 2;
+
+	      // add ripple to state
+	      var ripples = this.state.ripples;
+	      var key = Date.now();
+
+	      ripples[key] = {
+	        xPos: clickEv.pageX - offset.left,
+	        yPos: clickEv.pageY - offset.top,
+	        diameter: diameter,
+	        animateOut: false
+	      };
+
+	      this.setState({ ripples: ripples });
+	    }
+	  }, {
+	    key: 'removeRipples',
+	    value: function removeRipples(ev) {
+	      var _this2 = this;
+
+	      // animate out ripples
+	      var ripples = this.state.ripples,
+	          deleteKeys = Object.keys(ripples),
+	          k = void 0;
+
+	      for (k in ripples) {
+	        ripples[k].animateOut = true;
+	      }this.setState({ ripples: ripples });
+
+	      // remove ripples after animation
+	      var timer = setTimeout(function () {
+	        var ripples = _this2.state.ripples,
+	            i = deleteKeys.length;
+
+	        while (i--) {
+	          delete ripples[deleteKeys[i]];
+	        }_this2.setState({ ripples: ripples });
+	      }, animationDuration);
+
+	      this.rippleTimers.push(timer);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var cls = btnClass,
+	          k = void 0,
+	          v = void 0;
+
+	      var ripples = this.state.ripples;
+	      var _props = this.props;
+	      var color = _props.color;
+	      var size = _props.size;
+	      var variant = _props.variant;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['color', 'size', 'variant']);
+
+	      // button attributes
+
+	      for (k in btnAttrs) {
+	        v = this.props[k];
+	        if (v !== 'default') cls += ' ' + btnClass + '--' + v;
+	      }
+
+	      return _react2.default.createElement(
+	        'button',
+	        babelHelpers.extends({}, reactProps, {
+	          ref: 'buttonEl',
+	          className: cls + ' ' + this.props.className,
+	          onMouseUp: this.onMouseUpCB,
+	          onMouseDown: this.onMouseDownCB,
+	          onMouseLeave: this.onMouseLeaveCB,
+	          onTouchStart: this.onTouchStartCB,
+	          onTouchEnd: this.onTouchEndCB
+	        }),
+	        this.props.children,
+	        Object.keys(ripples).map(function (k, i) {
+	          var v = ripples[k];
+
+	          return _react2.default.createElement(Ripple, {
+	            key: k,
+	            xPos: v.xPos,
+	            yPos: v.yPos,
+	            diameter: v.diameter,
+	            animateOut: v.animateOut
+	          });
+	        })
+	      );
+	    }
+	  }]);
+	  return Button;
+	}(_react2.default.Component);
+
+	/**
+	 * Ripple component
+	 * @class
+	 */
+
+
+	Button.propTypes = {
+	  color: PropTypes.oneOf(['default', 'primary', 'danger', 'dark', 'accent']),
+	  size: PropTypes.oneOf(['default', 'small', 'large']),
+	  variant: PropTypes.oneOf(['default', 'flat', 'raised', 'fab'])
+	};
+	Button.defaultProps = {
+	  className: '',
+	  color: 'default',
+	  size: 'default',
+	  variant: 'default'
+	};
+
+	var Ripple = function (_React$Component2) {
+	  babelHelpers.inherits(Ripple, _React$Component2);
+
+	  function Ripple() {
+	    var _ref;
+
+	    var _temp, _this3, _ret;
+
+	    babelHelpers.classCallCheck(this, Ripple);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this3 = babelHelpers.possibleConstructorReturn(this, (_ref = Ripple.__proto__ || Object.getPrototypeOf(Ripple)).call.apply(_ref, [this].concat(args))), _this3), _this3.state = {
+	      animateIn: false
+	    }, _temp), babelHelpers.possibleConstructorReturn(_this3, _ret);
+	  }
+
+	  babelHelpers.createClass(Ripple, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this4 = this;
+
+	      util.requestAnimationFrame(function () {
+	        _this4.setState({ animateIn: true });
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var diameter = this.props.diameter,
+	          radius = diameter / 2;
+
+	      var style = {
+	        height: diameter,
+	        width: diameter,
+	        top: this.props.yPos - radius || 0,
+	        left: this.props.xPos - radius || 0
+	      };
+
+	      // define class
+	      var cls = 'mui-ripple-effect';
+	      if (this.state.animateIn) cls += ' mui--animate-in mui--active';
+	      if (this.props.animateOut) cls += ' mui--animate-out';
+
+	      return _react2.default.createElement('div', { className: cls, style: style });
+	    }
+	  }]);
+	  return Ripple;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	Ripple.propTypes = {
+	  xPos: PropTypes.number,
+	  yPos: PropTypes.number,
+	  diameter: PropTypes.number,
+	  animateOut: PropTypes.bool
+	};
+	Ripple.defaultProps = {
+	  xPos: 0,
+	  yPos: 0,
+	  diameter: 0,
+	  animateOut: false
+	};
+	exports.default = Button;
+	module.exports = exports['default'];
+
+/***/ },
+/* 176 */
+/***/ function(module, exports) {
+
+	/**
+	 * MUI CSS/JS jqLite module
+	 * @module lib/jqLite
+	 */
+
+	'use strict';
+
+
+	/**
+	 * Add a class to an element.
+	 * @param {Element} element - The DOM element.
+	 * @param {string} cssClasses - Space separated list of class names.
+	 */
+	function jqLiteAddClass(element, cssClasses) {
+	  if (!cssClasses || !element.setAttribute) return;
+
+	  var existingClasses = _getExistingClasses(element),
+	      splitClasses = cssClasses.split(' '),
+	      cssClass;
+
+	  for (var i=0; i < splitClasses.length; i++) {
+	    cssClass = splitClasses[i].trim();
+	    if (existingClasses.indexOf(' ' + cssClass + ' ') === -1) {
+	      existingClasses += cssClass + ' ';
+	    }
+	  }
+	  
+	  element.setAttribute('class', existingClasses.trim());
+	}
+
+
+	/**
+	 * Get or set CSS properties.
+	 * @param {Element} element - The DOM element.
+	 * @param {string} [name] - The property name.
+	 * @param {string} [value] - The property value.
+	 */
+	function jqLiteCss(element, name, value) {
+	  // Return full style object
+	  if (name === undefined) {
+	    return getComputedStyle(element);
+	  }
+
+	  var nameType = jqLiteType(name);
+
+	  // Set multiple values
+	  if (nameType === 'object') {
+	    for (var key in name) element.style[_camelCase(key)] = name[key];
+	    return;
+	  }
+
+	  // Set a single value
+	  if (nameType === 'string' && value !== undefined) {
+	    element.style[_camelCase(name)] = value;
+	  }
+
+	  var styleObj = getComputedStyle(element),
+	      isArray = (jqLiteType(name) === 'array');
+
+	  // Read single value
+	  if (!isArray) return _getCurrCssProp(element, name, styleObj);
+
+	  // Read multiple values
+	  var outObj = {},
+	      key;
+
+	  for (var i=0; i < name.length; i++) {
+	    key = name[i];
+	    outObj[key] = _getCurrCssProp(element, key, styleObj);
+	  }
+
+	  return outObj;
+	}
+
+
+	/**
+	 * Check if element has class.
+	 * @param {Element} element - The DOM element.
+	 * @param {string} cls - The class name string.
+	 */
+	function jqLiteHasClass(element, cls) {
+	  if (!cls || !element.getAttribute) return false;
+	  return (_getExistingClasses(element).indexOf(' ' + cls + ' ') > -1);
+	}
+
+
+	/**
+	 * Return the type of a variable.
+	 * @param {} somevar - The JavaScript variable.
+	 */
+	function jqLiteType(somevar) {
+	  // handle undefined
+	  if (somevar === undefined) return 'undefined';
+
+	  // handle others (of type [object <Type>])
+	  var typeStr = Object.prototype.toString.call(somevar);
+	  if (typeStr.indexOf('[object ') === 0) {
+	    return typeStr.slice(8, -1).toLowerCase();
+	  } else {
+	    throw new Error("MUI: Could not understand type: " + typeStr);
+	  }    
+	}
+
+
+	/**
+	 * Attach an event handler to a DOM element
+	 * @param {Element} element - The DOM element.
+	 * @param {string} events - Space separated event names.
+	 * @param {Function} callback - The callback function.
+	 * @param {Boolean} useCapture - Use capture flag.
+	 */
+	function jqLiteOn(element, events, callback, useCapture) {
+	  useCapture = (useCapture === undefined) ? false : useCapture;
+
+	  var cache = element._muiEventCache = element._muiEventCache || {};  
+
+	  events.split(' ').map(function(event) {
+	    // add to DOM
+	    element.addEventListener(event, callback, useCapture);
+
+	    // add to cache
+	    cache[event] = cache[event] || [];
+	    cache[event].push([callback, useCapture]);
+	  });
+	}
+
+
+	/**
+	 * Remove an event handler from a DOM element
+	 * @param {Element} element - The DOM element.
+	 * @param {string} events - Space separated event names.
+	 * @param {Function} callback - The callback function.
+	 * @param {Boolean} useCapture - Use capture flag.
+	 */
+	function jqLiteOff(element, events, callback, useCapture) {
+	  useCapture = (useCapture === undefined) ? false : useCapture;
+
+	  // remove from cache
+	  var cache = element._muiEventCache = element._muiEventCache || {},
+	      argsList,
+	      args,
+	      i;
+
+	  events.split(' ').map(function(event) {
+	    argsList = cache[event] || [];
+
+	    i = argsList.length;
+	    while (i--) {
+	      args = argsList[i];
+
+	      // remove all events if callback is undefined
+	      if (callback === undefined ||
+	          (args[0] === callback && args[1] === useCapture)) {
+
+	        // remove from cache
+	        argsList.splice(i, 1);
+	        
+	        // remove from DOM
+	        element.removeEventListener(event, args[0], args[1]);
+	      }
+	    }
+	  });
+	}
+
+
+	/**
+	 * Attach an event hander which will only execute once per element per event
+	 * @param {Element} element - The DOM element.
+	 * @param {string} events - Space separated event names.
+	 * @param {Function} callback - The callback function.
+	 * @param {Boolean} useCapture - Use capture flag.
+	 */
+	function jqLiteOne(element, events, callback, useCapture) {
+	  events.split(' ').map(function(event) {
+	    jqLiteOn(element, event, function onFn(ev) {
+	      // execute callback
+	      if (callback) callback.apply(this, arguments);
+
+	      // remove wrapper
+	      jqLiteOff(element, event, onFn);
+	    }, useCapture);
+	  });
+	}
+
+
+	/**
+	 * Get or set horizontal scroll position
+	 * @param {Element} element - The DOM element
+	 * @param {number} [value] - The scroll position
+	 */
+	function jqLiteScrollLeft(element, value) {
+	  var win = window;
+
+	  // get
+	  if (value === undefined) {
+	    if (element === win) {
+	      var docEl = document.documentElement;
+	      return (win.pageXOffset || docEl.scrollLeft) - (docEl.clientLeft || 0);
+	    } else {
+	      return element.scrollLeft;
+	    }
+	  }
+
+	  // set
+	  if (element === win) win.scrollTo(value, jqLiteScrollTop(win));
+	  else element.scrollLeft = value;
+	}
+
+
+	/**
+	 * Get or set vertical scroll position
+	 * @param {Element} element - The DOM element
+	 * @param {number} value - The scroll position
+	 */
+	function jqLiteScrollTop(element, value) {
+	  var win = window;
+
+	  // get
+	  if (value === undefined) {
+	    if (element === win) {
+	      var docEl = document.documentElement;
+	      return (win.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+	    } else {
+	      return element.scrollTop;
+	    }
+	  }
+
+	  // set
+	  if (element === win) win.scrollTo(jqLiteScrollLeft(win), value);
+	  else element.scrollTop = value;
+	}
+
+
+	/**
+	 * Return object representing top/left offset and element height/width.
+	 * @param {Element} element - The DOM element.
+	 */
+	function jqLiteOffset(element) {
+	  var win = window,
+	      rect = element.getBoundingClientRect(),
+	      scrollTop = jqLiteScrollTop(win),
+	      scrollLeft = jqLiteScrollLeft(win);
+
+	  return {
+	    top: rect.top + scrollTop,
+	    left: rect.left + scrollLeft,
+	    height: rect.height,
+	    width: rect.width
+	  };
+	}
+
+
+	/**
+	 * Attach a callback to the DOM ready event listener
+	 * @param {Function} fn - The callback function.
+	 */
+	function jqLiteReady(fn) {
+	  var done = false,
+	      top = true,
+	      doc = document,
+	      win = doc.defaultView,
+	      root = doc.documentElement,
+	      add = doc.addEventListener ? 'addEventListener' : 'attachEvent',
+	      rem = doc.addEventListener ? 'removeEventListener' : 'detachEvent',
+	      pre = doc.addEventListener ? '' : 'on';
+
+	  var init = function(e) {
+	    if (e.type == 'readystatechange' && doc.readyState != 'complete') {
+	      return;
+	    }
+
+	    (e.type == 'load' ? win : doc)[rem](pre + e.type, init, false);
+	    if (!done && (done = true)) fn.call(win, e.type || e);
+	  };
+
+	  var poll = function() {
+	    try { root.doScroll('left'); } catch(e) { setTimeout(poll, 50); return; }
+	    init('poll');
+	  };
+
+	  if (doc.readyState == 'complete') {
+	    fn.call(win, 'lazy');
+	  } else {
+	    if (doc.createEventObject && root.doScroll) {
+	      try { top = !win.frameElement; } catch(e) { }
+	      if (top) poll();
+	    }
+	    doc[add](pre + 'DOMContentLoaded', init, false);
+	    doc[add](pre + 'readystatechange', init, false);
+	    win[add](pre + 'load', init, false);
+	  }
+	}
+
+
+	/**
+	 * Remove classes from a DOM element
+	 * @param {Element} element - The DOM element.
+	 * @param {string} cssClasses - Space separated list of class names.
+	 */
+	function jqLiteRemoveClass(element, cssClasses) {
+	  if (!cssClasses || !element.setAttribute) return;
+
+	  var existingClasses = _getExistingClasses(element),
+	      splitClasses = cssClasses.split(' '),
+	      cssClass;
+	  
+	  for (var i=0; i < splitClasses.length; i++) {
+	    cssClass = splitClasses[i].trim();
+	    while (existingClasses.indexOf(' ' + cssClass + ' ') >= 0) {
+	      existingClasses = existingClasses.replace(' ' + cssClass + ' ', ' ');
+	    }
+	  }
+
+	  element.setAttribute('class', existingClasses.trim());
+	}
+
+
+	// ------------------------------
+	// Utilities
+	// ------------------------------
+	var SPECIAL_CHARS_REGEXP = /([\:\-\_]+(.))/g,
+	    MOZ_HACK_REGEXP = /^moz([A-Z])/,
+	    ESCAPE_REGEXP = /([.*+?^=!:${}()|\[\]\/\\])/g;
+
+
+	function _getExistingClasses(element) {
+	  var classes = (element.getAttribute('class') || '').replace(/[\n\t]/g, '');
+	  return ' ' + classes + ' ';
+	}
+
+
+	function _camelCase(name) {
+	  return name.
+	    replace(SPECIAL_CHARS_REGEXP, function(_, separator, letter, offset) {
+	      return offset ? letter.toUpperCase() : letter;
+	    }).
+	    replace(MOZ_HACK_REGEXP, 'Moz$1');
+	}
+
+
+	function _escapeRegExp(string) {
+	  return string.replace(ESCAPE_REGEXP, "\\$1");
+	}
+
+
+	function _getCurrCssProp(elem, name, computed) {
+	  var ret;
+
+	  // try computed style
+	  ret = computed.getPropertyValue(name);
+
+	  // try style attribute (if element is not attached to document)
+	  if (ret === '' && !elem.ownerDocument) ret = elem.style[_camelCase(name)];
+
+	  return ret;
+	}
+
+
+	/**
+	 * Module API
+	 */
+	module.exports = {
+	  /** Add classes */
+	  addClass: jqLiteAddClass,
+
+	  /** Get or set CSS properties */
+	  css: jqLiteCss,
+
+	  /** Check for class */
+	  hasClass: jqLiteHasClass,
+
+	  /** Remove event handlers */
+	  off: jqLiteOff,
+
+	  /** Return offset values */
+	  offset: jqLiteOffset,
+
+	  /** Add event handlers */
+	  on: jqLiteOn,
+
+	  /** Add an execute-once event handler */
+	  one: jqLiteOne,
+
+	  /** DOM ready event handler */
+	  ready: jqLiteReady,
+
+	  /** Remove classes */
+	  removeClass: jqLiteRemoveClass,
+
+	  /** Check JavaScript variable instance type */
+	  type: jqLiteType,
+
+	  /** Get or set horizontal scroll position */
+	  scrollLeft: jqLiteScrollLeft,
+
+	  /** Get or set vertical scroll position */
+	  scrollTop: jqLiteScrollTop
+	};
+
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * MUI CSS/JS utilities module
+	 * @module lib/util
+	 */
+
+	'use strict';
+
+
+	var config = __webpack_require__(178),
+	    jqLite = __webpack_require__(176),
+	    nodeInsertedCallbacks = [],
+	    scrollLock = 0,
+	    scrollLockCls = 'mui-body--scroll-lock',
+	    scrollLockPos,
+	    _supportsPointerEvents;
+
+
+	/**
+	 * Logging function
+	 */
+	function logFn() {
+	  var win = window;
+
+	  if (config.debug && typeof win.console !== "undefined") {
+	    try {
+	      win.console.log.apply(win.console, arguments);
+	    } catch (a) {
+	      var e = Array.prototype.slice.call(arguments);
+	      win.console.log(e.join("\n"));
+	    }
+	  }
+	}
+
+
+	/**
+	 * Load CSS text in new stylesheet
+	 * @param {string} cssText - The css text.
+	 */
+	function loadStyleFn(cssText) {
+	  var doc = document,
+	      head;
+
+	  // copied from jQuery 
+	  head = doc.head ||
+	    doc.getElementsByTagName('head')[0] ||
+	    doc.documentElement;
+	  
+	  var e = doc.createElement('style');
+	  e.type = 'text/css';
+	    
+	  if (e.styleSheet) e.styleSheet.cssText = cssText;
+	  else e.appendChild(doc.createTextNode(cssText));
+	  
+	  // add to document
+	  head.insertBefore(e, head.firstChild);
+
+	  return e;
+	}
+
+
+	/**
+	 * Raise an error
+	 * @param {string} msg - The error message.
+	 */
+	function raiseErrorFn(msg, useConsole) {
+	  if (useConsole) {
+	    if (typeof console !== 'undefined') console.error('MUI Warning: ' + msg);
+	  } else {
+	    throw new Error('MUI: ' + msg);
+	  }
+	}
+
+
+	/**
+	 * Register callbacks on muiNodeInserted event
+	 * @param {function} callbackFn - The callback function.
+	 */
+	function onNodeInsertedFn(callbackFn) {
+	  nodeInsertedCallbacks.push(callbackFn);
+
+	  // initalize listeners
+	  if (nodeInsertedCallbacks._initialized === undefined) {
+	    var doc = document,
+	        events = 'animationstart mozAnimationStart webkitAnimationStart';
+
+	    jqLite.on(doc, events, animationHandlerFn);
+	    nodeInsertedCallbacks._initialized = true;
+	  }
+	}
+
+
+	/**
+	 * Execute muiNodeInserted callbacks
+	 * @param {Event} ev - The DOM event.
+	 */
+	function animationHandlerFn(ev) {
+	  // check animation name
+	  if (ev.animationName !== 'mui-node-inserted') return;
+
+	  var el = ev.target;
+
+	  // iterate through callbacks
+	  for (var i=nodeInsertedCallbacks.length - 1; i >= 0; i--) {
+	    nodeInsertedCallbacks[i](el);
+	  }
+	}
+
+
+	/**
+	 * Convert Classname object, with class as key and true/false as value, to an
+	 * class string.
+	 * @param  {Object} classes The classes
+	 * @return {String}         class string
+	 */
+	function classNamesFn(classes) {
+	  var cs = '';
+	  for (var i in classes) {
+	    cs += (classes[i]) ? i + ' ' : '';
+	  }
+	  return cs.trim();
+	}
+
+
+	/**
+	 * Check if client supports pointer events.
+	 */
+	function supportsPointerEventsFn() {
+	  // check cache
+	  if (_supportsPointerEvents !== undefined) return _supportsPointerEvents;
+	  
+	  var element = document.createElement('x');
+	  element.style.cssText = 'pointer-events:auto';
+	  _supportsPointerEvents = (element.style.pointerEvents === 'auto');
+	  return _supportsPointerEvents;
+	}
+
+
+	/**
+	 * Create callback closure.
+	 * @param {Object} instance - The object instance.
+	 * @param {String} funcName - The name of the callback function.
+	 */
+	function callbackFn(instance, funcName) {
+	  return function() {instance[funcName].apply(instance, arguments);};
+	}
+
+
+	/**
+	 * Dispatch event.
+	 * @param {Element} element - The DOM element.
+	 * @param {String} eventType - The event type.
+	 * @param {Boolean} bubbles=true - If true, event bubbles.
+	 * @param {Boolean} cancelable=true = If true, event is cancelable
+	 * @param {Object} [data] - Data to add to event object
+	 */
+	function dispatchEventFn(element, eventType, bubbles, cancelable, data) {
+	  var ev = document.createEvent('HTMLEvents'),
+	      bubbles = (bubbles !== undefined) ? bubbles : true,
+	      cancelable = (cancelable !== undefined) ? cancelable : true,
+	      k;
+	  
+	  ev.initEvent(eventType, bubbles, cancelable);
+
+	  // add data to event object
+	  if (data) for (k in data) ev[k] = data[k];
+
+	  // dispatch
+	  if (element) element.dispatchEvent(ev);
+
+	  return ev;
+	}
+
+
+	/**
+	 * Turn on window scroll lock.
+	 */
+	function enableScrollLockFn() {
+	  // increment counter
+	  scrollLock += 1;
+
+	  // add lock
+	  if (scrollLock === 1) {
+	    var win = window,
+	        doc = document;
+
+	    scrollLockPos = {left: jqLite.scrollLeft(win), top: jqLite.scrollTop(win)};
+	    jqLite.addClass(doc.body, scrollLockCls);
+	    win.scrollTo(scrollLockPos.left, scrollLockPos.top);
+	  }
+	}
+
+
+	/**
+	 * Turn off window scroll lock.
+	 * @param {Boolean} resetPos - Reset scroll position to original value.
+	 */
+	function disableScrollLockFn(resetPos) {
+	  // ignore
+	  if (scrollLock === 0) return;
+
+	  // decrement counter
+	  scrollLock -= 1;
+
+	  // remove lock 
+	  if (scrollLock === 0) {
+	    var win = window,
+	        doc = document;
+
+	    jqLite.removeClass(doc.body, scrollLockCls);
+	    if (resetPos) win.scrollTo(scrollLockPos.left, scrollLockPos.top);
+	  }
+	}
+
+
+	/**
+	 * requestAnimationFrame polyfilled
+	 * @param {Function} callback - The callback function
+	 */
+	function requestAnimationFrameFn(callback) {
+	  var fn = window.requestAnimationFrame;
+	  if (fn) fn(callback);
+	  else setTimeout(callback, 0);
+	}
+
+
+	/**
+	 * Define the module API
+	 */
+	module.exports = {
+	  /** Create callback closures */
+	  callback: callbackFn,
+	  
+	  /** Classnames object to string */
+	  classNames: classNamesFn,
+
+	  /** Disable scroll lock */
+	  disableScrollLock: disableScrollLockFn,
+
+	  /** Dispatch event */
+	  dispatchEvent: dispatchEventFn,
+	  
+	  /** Enable scroll lock */
+	  enableScrollLock: enableScrollLockFn,
+
+	  /** Log messages to the console when debug is turned on */
+	  log: logFn,
+
+	  /** Load CSS text as new stylesheet */
+	  loadStyle: loadStyleFn,
+
+	  /** Register muiNodeInserted handler */
+	  onNodeInserted: onNodeInsertedFn,
+
+	  /** Raise MUI error */
+	  raiseError: raiseErrorFn,
+
+	  /** Request animation frame */
+	  requestAnimationFrame: requestAnimationFrameFn,
+
+	  /** Support Pointer Events check */
+	  supportsPointerEvents: supportsPointerEventsFn
+	};
+
+
+/***/ },
+/* 178 */
+/***/ function(module, exports) {
+
+	/**
+	 * MUI config module
+	 * @module config
+	 */
+
+	/** Define module API */
+	module.exports = {
+	  /** Use debug mode */
+	  debug: true
+	};
+
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React container module
+	 * @module react/container
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	/**
+	 * Container constructor
+	 * @class
+	 */
+	var Container = function (_React$Component) {
+	  babelHelpers.inherits(Container, _React$Component);
+
+	  function Container() {
+	    babelHelpers.classCallCheck(this, Container);
+	    return babelHelpers.possibleConstructorReturn(this, (Container.__proto__ || Object.getPrototypeOf(Container)).apply(this, arguments));
+	  }
+
+	  babelHelpers.createClass(Container, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props;
+	      var children = _props.children;
+	      var className = _props.className;
+	      var fluid = _props.fluid;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['children', 'className', 'fluid']);
+
+
+	      var cls = 'mui-container';
+
+	      // fluid containers
+	      if (fluid) cls += '-fluid';
+
+	      return _react2.default.createElement(
+	        'div',
+	        babelHelpers.extends({}, reactProps, {
+	          className: cls + ' ' + className
+	        }),
+	        children
+	      );
+	    }
+	  }]);
+	  return Container;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	Container.propTypes = {
+	  fluid: _react2.default.PropTypes.bool
+	};
+	Container.defaultProps = {
+	  className: '',
+	  fluid: false
+	};
+	exports.default = Container;
+	module.exports = exports['default'];
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React divider module
+	 * @module react/divider
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	/**
+	 * Divider constructor
+	 * @class
+	 */
+	var Divider = function (_React$Component) {
+	  babelHelpers.inherits(Divider, _React$Component);
+
+	  function Divider() {
+	    babelHelpers.classCallCheck(this, Divider);
+	    return babelHelpers.possibleConstructorReturn(this, (Divider.__proto__ || Object.getPrototypeOf(Divider)).apply(this, arguments));
+	  }
+
+	  babelHelpers.createClass(Divider, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props;
+	      var children = _props.children;
+	      var className = _props.className;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['children', 'className']);
+
+
+	      return _react2.default.createElement('div', babelHelpers.extends({}, reactProps, {
+	        className: 'mui-divider ' + className
+	      }));
+	    }
+	  }]);
+	  return Divider;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	Divider.defaultProps = {
+	  className: ''
+	};
+	exports.default = Divider;
+	module.exports = exports['default'];
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React Row Component
+	 * @module react/row
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	var _util = __webpack_require__(177);
+
+	var util = babelHelpers.interopRequireWildcard(_util);
+
+
+	var breakpoints = ['xs', 'sm', 'md', 'lg'];
+
+	/**
+	 * Row constructor
+	 * @class
+	 */
+
+	var Row = function (_React$Component) {
+	  babelHelpers.inherits(Row, _React$Component);
+
+	  function Row() {
+	    babelHelpers.classCallCheck(this, Row);
+	    return babelHelpers.possibleConstructorReturn(this, (Row.__proto__ || Object.getPrototypeOf(Row)).apply(this, arguments));
+	  }
+
+	  babelHelpers.createClass(Row, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props;
+	      var children = _props.children;
+	      var className = _props.className;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['children', 'className']);
+
+
+	      return _react2.default.createElement(
+	        'div',
+	        babelHelpers.extends({}, reactProps, {
+	          className: 'mui-row ' + className
+	        }),
+	        children
+	      );
+	    }
+	  }]);
+	  return Row;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	Row.defaultProps = {
+	  className: ''
+	};
+	exports.default = Row;
+	module.exports = exports['default'];
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var babelHelpers = __webpack_require__(174);
+	/**
+	 * MUI React Col Component
+	 * @module react/col
+	 */
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = babelHelpers.interopRequireDefault(_react);
+
+	var _util = __webpack_require__(177);
+
+	var util = babelHelpers.interopRequireWildcard(_util);
+
+
+	var breakpoints = ['xs', 'sm', 'md', 'lg', 'xl'];
+
+	/**
+	 * Col constructor
+	 * @class
+	 */
+
+	var Col = function (_React$Component) {
+	  babelHelpers.inherits(Col, _React$Component);
+
+	  function Col() {
+	    babelHelpers.classCallCheck(this, Col);
+	    return babelHelpers.possibleConstructorReturn(this, (Col.__proto__ || Object.getPrototypeOf(Col)).apply(this, arguments));
+	  }
+
+	  babelHelpers.createClass(Col, [{
+	    key: 'defaultProps',
+	    value: function defaultProps() {
+	      var props = { className: '' },
+	          i = void 0,
+	          v = void 0;
+
+	      // add {breakpoint}, {breakpoint}-offset to props
+	      for (i = breakpoints.length - 1; i > -1; i--) {
+	        v = breakpoints[i];
+	        props[v] = null;
+	        props[v + '-offset'] = null;
+	      }
+
+	      return props;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var cls = {},
+	          i = void 0,
+	          bk = void 0,
+	          val = void 0,
+	          baseCls = void 0;
+
+	      var _props = this.props;
+	      var children = _props.children;
+	      var className = _props.className;
+	      var reactProps = babelHelpers.objectWithoutProperties(_props, ['children', 'className']);
+
+	      // add mui-col classes
+
+	      for (i = breakpoints.length - 1; i > -1; i--) {
+	        bk = breakpoints[i];
+	        baseCls = 'mui-col-' + bk;
+
+	        // add mui-col-{bk}-{val}
+	        val = this.props[bk];
+	        if (val) cls[baseCls + '-' + val] = true;
+
+	        // add mui-col-{bk}-offset-{val}
+	        val = this.props[bk + '-offset'];
+	        if (val) cls[baseCls + '-offset-' + val] = true;
+
+	        // remove from reactProps
+	        delete reactProps[bk];
+	        delete reactProps[bk + '-offset'];
+	      }
+
+	      cls = util.classNames(cls);
+
+	      return _react2.default.createElement(
+	        'div',
+	        babelHelpers.extends({}, reactProps, {
+	          className: cls + ' ' + className
+	        }),
+	        children
+	      );
+	    }
+	  }]);
+	  return Col;
+	}(_react2.default.Component);
+
+	/** Define module API */
+
+
+	exports.default = Col;
+	module.exports = exports['default'];
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(184);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(189)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js?modules!./styles.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?modules!./styles.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(185)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._3nn6mgRA5DkUa5h_loWGve {\n  padding: 0 20px;\n}\n\n._29XiQXKj5QC9wAyI8dAuAj {\n  padding-top: 20px;\n  font-size: 16px;\n}\n\n._2zKuPEF4CuiWjglupBj3y9 {\n  background: url(" + __webpack_require__(186) + ") no-repeat center center;\n  height: 540px;\n}\n\n._2wswvlBTjLF54iepLWPPpK {\n  width: 100%;\n  background: url(" + __webpack_require__(187) + ") no-repeat center center;\n  background-attachment: fixed;\n  background-size: cover;\n  display: flex;\n  align-items: center;\n  margin-top: 30px;\n}\n\n._1H6Y8QUKqLyWxPY9a_fxdS {\n  text-align: center;\n}\n\n.HBH0eYvQekBS-2FZiGuZb {\n  color: #009c00;\n  font-size: 32px;\n  font-weight: 900;\n  margin: 30px;\n  line-height: 36px;\n}\n\n._2LrsxZzQ8Thdjt7tDMv6P9 {\n  color: #444;\n  font-size: 16px;\n  font-weight: 300;\n}\n\n._2IhvZQRsURZAbYfEBtVdce {\n  font-weight: 700;\n}\n\n._HNcGQdpLYugWR-IWb8_I {\n  margin-bottom: 60px;\n}\n\n._3we5Ko6QSHgNfBBDNntgRj {\n  color: white;\n}\n\n._2ICNgT1AXLZZDn-o-ZdNru {\n  text-align: left;\n}\n\n._3VFgB4mbdDnLaO93vsBnr5 {\n  color: #009c00;\n  font-weight: 600;\n}\n\n.jElpQ4wUaIqYoLfWivfeW {\n  background-color: #efedee;\n  margin-bottom: 40px;\n}\n\n._20NR7cw2wymp7uj7AtmmAR {\n  height: 65px;\n}\n\n._2L687p3df6vdzEFQ1hIIwy, .YOhF5K-FgDP4JZ7PfxZQh {\n  background-color: #efedee;\n}\n\n._2L687p3df6vdzEFQ1hIIwy {\n  padding-top: 30px;\n}\n\n.SGXY7WUrkElXT5RhfEUTw {\n  height: 450px;\n  width: 100%;\n}\n\n.Lb2LlgS_1idrtaPLaAAu1 {\n  height: 300px;\n  background-color: #444;\n}\n\n._1zXt7ZFlTiW6GLMJPrQJVY {\n  background-color: #fff;\n  padding: 8px 15px;\n}\n\n._3vJWzNKyfPZy5lfjBenQxc {\n  font-size: 20px;\n  line-height: 30px;\n  text-align: left;\n  margin: 0;\n}\n\n._2HIcAbmV3ODKxQqzLaqttz {\n  background: url('http://img.epochtimes.com.tw/upload/images/2014/06/29/95462_medium.jpg') no-repeat center center;\n}\n\n.Mz1wD90gipDXVxWfy1YSO {\n  background: url(" + __webpack_require__(188) + ") no-repeat center center;\n}\n\n._2Q_x8kx4eZ6TJC_rbC98UO {\n  background: url('https://govex.jhu.edu/content/uploads/2016/01/400x400-andrew-n.jpg') no-repeat center center;\n}\n\n._3gijctHhnvezu7uoHZBaGN {\n  font-size: 16px;\n  line-height: 26px;\n  color: #444;\n}\n\n._3DzfoQSRpcR5x2ZhU4vV3S {\n  background-color: #333;\n}\n\n._2nBlQl0q8nJTqQuM0p3S2L {\n  margin-top: 20px;\n}\n", ""]);
+
+	// exports
+	exports.locals = {
+		"bar": "_3nn6mgRA5DkUa5h_loWGve",
+		"appBarText": "_29XiQXKj5QC9wAyI8dAuAj",
+		"hero": "_2zKuPEF4CuiWjglupBj3y9",
+		"sponsor": "_2wswvlBTjLF54iepLWPPpK _2zKuPEF4CuiWjglupBj3y9",
+		"body": "_1H6Y8QUKqLyWxPY9a_fxdS",
+		"heading": "HBH0eYvQekBS-2FZiGuZb",
+		"bodyText": "_2LrsxZzQ8Thdjt7tDMv6P9",
+		"bodyTextBold": "_2IhvZQRsURZAbYfEBtVdce _2LrsxZzQ8Thdjt7tDMv6P9",
+		"bodyTextBottom": "_HNcGQdpLYugWR-IWb8_I _2LrsxZzQ8Thdjt7tDMv6P9",
+		"bodyTextWhite": "_3we5Ko6QSHgNfBBDNntgRj _2LrsxZzQ8Thdjt7tDMv6P9",
+		"eventInfo": "_2ICNgT1AXLZZDn-o-ZdNru",
+		"infoLabel": "_3VFgB4mbdDnLaO93vsBnr5",
+		"speakerButton": "jElpQ4wUaIqYoLfWivfeW",
+		"icon": "_20NR7cw2wymp7uj7AtmmAR",
+		"speakerHeader": "_2L687p3df6vdzEFQ1hIIwy",
+		"speakerSection": "YOhF5K-FgDP4JZ7PfxZQh",
+		"speakerCard": "SGXY7WUrkElXT5RhfEUTw",
+		"speakerImg": "Lb2LlgS_1idrtaPLaAAu1",
+		"speakerInfo": "_1zXt7ZFlTiW6GLMJPrQJVY",
+		"speakerTitle": "_3vJWzNKyfPZy5lfjBenQxc HBH0eYvQekBS-2FZiGuZb",
+		"speakerImgLin": "_2HIcAbmV3ODKxQqzLaqttz Lb2LlgS_1idrtaPLaAAu1",
+		"speakerImgKao": "Mz1wD90gipDXVxWfy1YSO Lb2LlgS_1idrtaPLaAAu1",
+		"speakerImgNicklin": "_2Q_x8kx4eZ6TJC_rbC98UO Lb2LlgS_1idrtaPLaAAu1",
+		"speakerSubtitle": "_3gijctHhnvezu7uoHZBaGN _3vJWzNKyfPZy5lfjBenQxc HBH0eYvQekBS-2FZiGuZb",
+		"footer": "_3DzfoQSRpcR5x2ZhU4vV3S",
+		"footerLogo": "_2nBlQl0q8nJTqQuM0p3S2L"
+	};
+
+/***/ },
+/* 185 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "7ac319ad230437228aeb7f97d377abaf.jpg";
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a10720ae9d4ce642c25b8348fcd9a673.jpg";
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a532abd09bcd2292f9e62bbc4fa8689e.jpg";
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0,
+		styleElementsInsertedAtTop = [];
+
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+
+		// By default, add <style> tags to the bottom of <head>.
+		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+
+	function insertStyleElement(options, styleElement) {
+		var head = getHeadElement();
+		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+		if (options.insertAt === "top") {
+			if(!lastStyleElementInsertedAtTop) {
+				head.insertBefore(styleElement, head.firstChild);
+			} else if(lastStyleElementInsertedAtTop.nextSibling) {
+				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+			} else {
+				head.appendChild(styleElement);
+			}
+			styleElementsInsertedAtTop.push(styleElement);
+		} else if (options.insertAt === "bottom") {
+			head.appendChild(styleElement);
+		} else {
+			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+		}
+	}
+
+	function removeStyleElement(styleElement) {
+		styleElement.parentNode.removeChild(styleElement);
+		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+		if(idx >= 0) {
+			styleElementsInsertedAtTop.splice(idx, 1);
+		}
+	}
+
+	function createStyleElement(options) {
+		var styleElement = document.createElement("style");
+		styleElement.type = "text/css";
+		insertStyleElement(options, styleElement);
+		return styleElement;
+	}
+
+	function createLinkElement(options) {
+		var linkElement = document.createElement("link");
+		linkElement.rel = "stylesheet";
+		insertStyleElement(options, linkElement);
+		return linkElement;
+	}
+
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement(options));
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else if(obj.sourceMap &&
+			typeof URL === "function" &&
+			typeof URL.createObjectURL === "function" &&
+			typeof URL.revokeObjectURL === "function" &&
+			typeof Blob === "function" &&
+			typeof btoa === "function") {
+			styleElement = createLinkElement(options);
+			update = updateLink.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+				if(styleElement.href)
+					URL.revokeObjectURL(styleElement.href);
+			};
+		} else {
+			styleElement = createStyleElement(options);
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+			};
+		}
+
+		update(obj);
+
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+
+	var replaceText = (function () {
+		var textStore = [];
+
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+
+		if(media) {
+			styleElement.setAttribute("media", media)
+		}
+
+		if(styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+
+	function updateLink(linkElement, obj) {
+		var css = obj.css;
+		var sourceMap = obj.sourceMap;
+
+		if(sourceMap) {
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+
+		var blob = new Blob([css], { type: "text/css" });
+
+		var oldSrc = linkElement.href;
+
+		linkElement.href = URL.createObjectURL(blob);
+
+		if(oldSrc)
+			URL.revokeObjectURL(oldSrc);
+	}
+
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d7c7212c66623907b27f73613286901b.png";
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "626219b9e7f9e8aca1e9629417e34a32.png";
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a32ef6f28509357455b7985f72262ca2.png";
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "f1c5c39286cb76e3d68cd457f11524e5.jpg";
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "f5e532c8b89b165d033308ccb2f6e319.png";
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e3aedc2ce5b2841f18a3662a54975ba7.png";
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d8c9e8ba5bd6fee7ee24f0d671cc9c46.png";
 
 /***/ }
 /******/ ]);
