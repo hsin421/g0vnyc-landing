@@ -2,6 +2,11 @@
   padding: 0 20px;
 }
 
+.appBarText {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
 .hero {
   background: url('./images/home_cover.jpg') no-repeat center center;
   height: 540px;

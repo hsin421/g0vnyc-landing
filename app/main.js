@@ -22,8 +22,14 @@ class LandingPage extends React.Component {
       <div>
         <Appbar className={styles.bar}>
           <Row>
-            <Col md="8">
+            <Col md="3" md-offset="1">
               <img src={logo} height="60px" />
+            </Col>
+            <Col md="4" className={styles.appBarText}>
+            	<span> 活動資訊 </span>
+            </Col>
+            <Col md="4" className={styles.appBarText}>
+            	<span> 中文 | ENGLISH </span>
             </Col>
           </Row>
         </Appbar>
