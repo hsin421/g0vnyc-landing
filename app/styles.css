@@ -13,6 +13,9 @@
   background: url('./images/g0v_nyc_green_texture.jpg') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .body {
@@ -24,6 +27,7 @@
   font-size: 32px;
   font-weight: 900;
   margin: 30px;
+  line-height: 36px;
 }
 
 .bodyText {
@@ -41,8 +45,25 @@
   color: white;
 }
 
+.eventInfo {
+  text-align: left;
+}
+
+.infoLabel {
+  color: #009c00;
+  font-weight: 600;
+}
+
 .icon {
   height: 65px;
+}
+
+.speakerHeader, .speakerSection {
+  background-color: #efedee;
+}
+
+.speakerHeader {
+  padding-top: 30px;
 }
 
 .speakerCard {
@@ -55,20 +76,24 @@
   background-color: #444;
 }
 
+.speakerInfo {
+  background-color: #fff;
+  padding: 8px 15px;
+}
+
 .speakerTitle {
   composes: heading;
   font-size: 20px;
+  line-height: 30px;
   text-align: left;
+  margin: 0;
 }
 
 .speakerSubtitle {
   composes: speakerTitle;
   font-size: 16px;
+  line-height: 26px;
   color: #444;
-}
-
-.speakerSection {
-  background-color: rgb(237, 238, 239);
 }
 
 .footer {

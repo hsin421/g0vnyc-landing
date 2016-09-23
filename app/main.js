@@ -16,7 +16,7 @@ import mapImg from './images/map.jpg';
 import logo from './images/organized_g0v.png';
 import cafePhiloLogo from './images/organized_cafe_philo.png';
 
-class Example extends React.Component {
+class LandingPage extends React.Component {
   render() {
     return (
       <div>
@@ -42,35 +42,33 @@ class Example extends React.Component {
           </Row>
           <Divider />
           <Row>
-        	<Col md="4" md-offset="4">
-        		<img src={calendarIcon} className={styles.icon} />
-        		<h3 className={styles.heading}> 活動資訊 </h3>
-        	</Col>
-          <Col md="6">
-          	<img src={mapImg} width="100%" />
-          </Col>
-          <Col md="6">
-          	<h4>資訊</h4>
-          	<p> 哈哈哈哈哈</p>
-          	<h4>地點</h4>
-          	<p>哈哈哈哈哈</p>
-          	<h4>招募對象</h4>
-          	<p>哈哈哈哈哈</p>
-          </Col>
+          	<Col md="4" md-offset="4">
+          		<img src={calendarIcon} className={styles.icon} />
+          		<h3 className={styles.heading}> 活動資訊 </h3>
+          	</Col>
+            <Col md="6">
+            	<img src={mapImg} width="100%" />
+            </Col>
+            <Col md="6" className={styles.eventInfo}>
+            	<h4 className={styles.infoLabel}>資訊</h4>
+            	<p> 哈哈哈哈哈</p>
+            	<h4 className={styles.infoLabel}>地點</h4>
+            	<p>哈哈哈哈哈</p>
+            	<h4 className={styles.infoLabel}>招募對象</h4>
+            	<p>哈哈哈哈哈</p>
+            </Col>
           </Row>
-          <Divider />
           <Row>
-          <div className={styles.sponsor}>
-      	  <Col md="4" md-offset="4">
-        	  	<img src={sponsorIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 贊助我們 </h3>
-          		<p className={styles.bodyTextWhite}> 我們除了需要財務資源，也希望透過貴單位的通訊方式...</p>
-          	  <Button color="primary">贊助資訊</Button>
-          </Col>
-          </div>
+            <div className={styles.sponsor}>
+          	  <Col md="4" md-offset="4">
+                <img src={sponsorIcon} className={styles.icon} />
+              	<h3 className={styles.heading}> 贊助我們 </h3>
+              	<p className={styles.bodyTextWhite}> 我們除了需要財務資源，也希望透過貴單位的通訊方式...</p>
+              	<Button color="primary">贊助資訊</Button>
+              </Col>
+            </div>
           </Row>
-          <Divider />
-          <Row className={styles.speakerSection}>
+          <Row className={styles.speakerHeader}>
 	          <Col md="4" md-offset="4">
 	    	  		<img src={speakersIcon} className={styles.icon} />
 	      			<h3 className={styles.heading}> 邀請講者 </h3>
@@ -81,7 +79,7 @@ class Example extends React.Component {
               <div className={styles.speakerCard}>
                 <div className={styles.speakerImg}>
                 </div>
-                <div>
+                <div className={styles.speakerInfo}>
 	      			   <h5 className={styles.speakerTitle}>Speaker</h5>
                  <p className={styles.speakerSubtitle}>subtitle</p>
                 </div>
@@ -91,7 +89,7 @@ class Example extends React.Component {
 	      			<div className={styles.speakerCard}>
                 <div className={styles.speakerImg}>
                 </div>
-                <div>
+                <div className={styles.speakerInfo}>
                  <h5 className={styles.speakerTitle}>Speaker</h5>
                  <p className={styles.speakerSubtitle}>subtitle</p>
                 </div>
@@ -101,14 +99,13 @@ class Example extends React.Component {
 	      			<div className={styles.speakerCard}>
                 <div className={styles.speakerImg}>
                 </div>
-                <div>
+                <div className={styles.speakerInfo}>
                  <h5 className={styles.speakerTitle}>Speaker</h5>
                  <p className={styles.speakerSubtitle}>subtitle</p>
                 </div>
               </div>
 	      		</Col>
       		</Row>
-          <Divider />
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> 主辦單位 </h3>
@@ -144,4 +141,4 @@ class Example extends React.Component {
   }
 }
 
-render(<Example />, document.getElementById('app'));
+render(<LandingPage />, document.getElementById('app'));
