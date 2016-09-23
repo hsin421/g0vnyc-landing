@@ -64,8 +64,8 @@ class Example extends React.Component {
       	  <Col md="4" md-offset="4">
         	  	<img src={sponsorIcon} className={styles.icon} />
           		<h3 className={styles.heading}> 贊助我們 </h3>
-          		<p> 哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈 哈哈哈哈哈</p>
-          	  <Button color="primary">button</Button>
+          		<p className={styles.bodyTextWhite}> 我們除了需要財務資源，也希望透過貴單位的通訊方式...</p>
+          	  <Button color="primary">贊助資訊</Button>
           </Col>
           </div>
           </Row>

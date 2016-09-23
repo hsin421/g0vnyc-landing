@@ -36,6 +36,11 @@
   margin-bottom: 60px;
 }
 
+.bodyTextWhite { 
+  composes: bodyText;
+  color: white;
+}
+
 .icon {
   height: 65px;
 }
