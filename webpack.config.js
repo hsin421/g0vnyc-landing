@@ -19,10 +19,9 @@ module.exports = {
 				test: /\.css$/, loader: 'style!css?modules'
 			},
 			{
-				test: /\.png$/, loader: 'file'
-			},
-			{
-				test: /\.jpg$/, loader: 'file'
+				test: /\.jpe?g$|\.gif$|\.png$|\.svg$/i,
+        loader: 'url-loader',
+        query: { limit: 20000 }
 			}
 		]
 	}
