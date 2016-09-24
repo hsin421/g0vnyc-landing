@@ -134,3 +134,24 @@
 .footerLogo {
   margin-top: 20px;
 }
+
+.greenDivider {
+  border-bottom: 5px solid #009c00;
+  height: 10px;
+  width: 100%;
+}
+
+.staffCard {
+  height: 90px;
+  border-bottom: 1px solid rgba(0,0,0,.12)
+}
+
+.staffCardHeading {
+  text-align: left;
+  font-weight: 700;
+}
+
+.staffCardBodyText {
+  composes: bodyText;
+  text-align:  left;
+}

@@ -27,7 +27,7 @@ export default class LandingCH extends React.Component {
               <img src={logo} height="60px" />
             </Col>
             <Col md="4" className={styles.appBarText}>
-            	<span> </span>
+            	<span><Link to="/staff">工作人員</Link> </span>
             </Col>
             <Col md="4" className={styles.appBarText}>
             	<span><Link to="/en">ENGLISH</Link> </span>
