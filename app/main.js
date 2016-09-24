@@ -77,7 +77,7 @@ class LandingPage extends React.Component {
             	{' chatbot'}</a> 來回答你的問題，試試看吧！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
-              	<Button color="primary">我有問題</Button>
+              	<Button color="primary">跟g0v bot聊聊</Button>
               </a>
             </Col>
           </Row>
@@ -162,7 +162,7 @@ class LandingPage extends React.Component {
       			</Col>
       			<Col md="8" md-offset="2">
               <div className={styles.bodyTextBottom}>
-      				  海台青 | 美東G0V | 里達律師事務所 | C Bao 餐館 | Taiwan Bear
+      				  海台青 | 美東G0V | 達里律師事務所 | C Bao 餐館 | Taiwan Bear House
               </div>
       			</Col>
       		</Row>
