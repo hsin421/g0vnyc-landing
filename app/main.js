@@ -30,7 +30,7 @@ class LandingPage extends React.Component {
             	<span> </span>
             </Col>
             <Col md="4" className={styles.appBarText}>
-            	<span> 中文 | ENGLISH </span>
+            	<span> </span>
             </Col>
           </Row>
         </Appbar>
@@ -67,14 +67,18 @@ class LandingPage extends React.Component {
             	<p className={styles.bodyText}>Overnight optional</p>
             	<h4 className={styles.infoLabel}>地點</h4>
             	<p className={styles.bodyTextBold}>NYC WeWork Times Square</p>
-            	<p className={styles.bodyText}>1460 Broadway, NY 10036</p>
+            	<p className={styles.bodyText}>1460 Broadway, NY 10036  
+                <a href="https://www.google.com/maps/place/1460+Broadway,+New+York,+NY+10036/@40.7551113,-73.9884183,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ab29218823:0x9ed7f9958f0596ca!8m2!3d40.7551073!4d-73.9862243" target="_blank">
+                 {' Map'}
+                </a>
+              </p>
             	<h4 className={styles.infoLabel}>招募對象</h4>
             	<p className={styles.bodyTextBold}>熱血如火的你！</p>
             	<p className={styles.bodyText}>請自備電腦</p>
             	<h4 className={styles.infoLabel}>還有問題？</h4>
             	<p className={styles.bodyText}>我們寫了一個 
             	<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq" target="_blank">
-            	{' chatbot'}</a> 來回答你的問題，試試看吧！</p>
+            	{' chatbot'}</a> 來回答你的問題，試試看！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
               	<Button color="primary">跟g0v bot聊聊</Button>
@@ -86,7 +90,7 @@ class LandingPage extends React.Component {
           	  <Col md="4" md-offset="4">
                 <img src={sponsorIcon} className={styles.icon} />
               	<h3 className={styles.heading}> 贊助我們 </h3>
-              	<p className={styles.bodyTextWhite}> 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述⺫標更近⼀步。
+              	<p className={styles.bodyTextWhite}> 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述目標更近⼀步。
 活動結束後，我們會將財務明細以及成果報告⽤電⼦郵件的⽅式寄給貴組織，
 持續分享各個專案的開發進度與成果。</p>
               	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
