@@ -8,33 +8,20 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 
-import styles from '../styles.css';
-import calendarIcon from '../images/icon_event.png';
-import sponsorIcon from '../images/icon_sponsors.png';
-import speakersIcon from '../images/icon_speakers.png';
-import mapImg from '../images/map.jpg';
-import logo from '../images/organized_g0v.png';
-import logoDark from '../images/g0v_logo_dark.png';
-import cafePhiloLogo from '../images/organized_cafe_philo.png';
+import styles from '../../styles.css';
+import calendarIcon from '../../images/icon_event.png';
+import sponsorIcon from '../../images/icon_sponsors.png';
+import speakersIcon from '../../images/icon_speakers.png';
+import mapImg from '../../images/map.jpg';
+import logo from '../../images/organized_g0v.png';
+import logoDark from '../../images/g0v_logo_dark.png';
+import cafePhiloLogo from '../../images/organized_cafe_philo.png';
 
 export default class LandingCH extends React.Component {
-  render() {
-    return (
-      <div>
-        <Appbar className={styles.bar}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logo} height="60px" />
-            </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/staff">工作人員</Link> </span>
-            </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/en">ENGLISH</Link> </span>
-            </Col>
-          </Row>
-        </Appbar>
-        <div className={styles.hero} />
+	render() {
+		return(
+			<div>
+				 <div className={styles.hero} />
         <Container className={styles.body}>
         	<Row>
 	          <Col md="8" md-offset="2">
@@ -176,14 +163,8 @@ export default class LandingCH extends React.Component {
       			</Col>
       		</Row>
         </Container>
-        <Appbar className={styles.footer}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logoDark} height="20px" className={styles.footerLogo}/>
-            </Col>
-          </Row>
-        </Appbar>
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }
+

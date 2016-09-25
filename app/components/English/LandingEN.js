@@ -8,14 +8,14 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 
-import styles from '../styles.css';
-import calendarIcon from '../images/icon_event.png';
-import sponsorIcon from '../images/icon_sponsors.png';
-import speakersIcon from '../images/icon_speakers.png';
-import mapImg from '../images/map.jpg';
-import logo from '../images/organized_g0v.png';
-import logoDark from '../images/g0v_logo_dark.png';
-import cafePhiloLogo from '../images/organized_cafe_philo.png';
+import styles from '../../styles.css';
+import calendarIcon from '../../images/icon_event.png';
+import sponsorIcon from '../../images/icon_sponsors.png';
+import speakersIcon from '../../images/icon_speakers.png';
+import mapImg from '../../images/map.jpg';
+import logo from '../../images/organized_g0v.png';
+import logoDark from '../../images/g0v_logo_dark.png';
+import cafePhiloLogo from '../../images/organized_cafe_philo.png';
 
 export default class LandingEN extends React.Component {
   render() {

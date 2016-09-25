@@ -7,6 +7,11 @@
   font-size: 16px;
 }
 
+.headerItem {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .hero {
   background: url('./images/home_cover.jpg') no-repeat center center;
   height: 540px;
