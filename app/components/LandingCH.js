@@ -23,14 +23,15 @@ export default class LandingCH extends React.Component {
       <div>
         <Appbar className={styles.bar}>
           <Row>
-            <Col md="3" md-offset="1">
+            <Col md="2" md-offset="1">
               <img src={logo} height="60px" />
             </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/staff">工作人員</Link> </span>
+            <Col md="6" className={styles.appBarNav}>
+            	<span><Link className={styles.appBarLink} to="/staff">工作人員</Link></span>
+              <span><Link className={styles.appBarLink} to="">活動流程</Link></span>
             </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/en">ENGLISH</Link> </span>
+            <Col md="2" className={styles.appBarNav}>
+            	<span><Link className={styles.appBarLink} to="/en">ENGLISH</Link></span>
             </Col>
           </Row>
         </Appbar>
@@ -66,7 +67,7 @@ export default class LandingCH extends React.Component {
             	<p className={styles.bodyTextBold}> 11/5 (Sat) - 11/6 (Sun) </p>
             	<p className={styles.bodyText}>
                 <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43'>
-                  {'Forecast. '}
+                  {'Forecast.'}
                 </a>
                   Working overnight is optional.
               </p>
@@ -83,7 +84,7 @@ export default class LandingCH extends React.Component {
             	<h4 className={styles.infoLabel}>還有問題？</h4>
             	<p className={styles.bodyText}>我們寫了一個 
             	<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq" target="_blank">
-            	{' chatbot'}</a> 來回答你的問題，試試看！</p>
+            	{'chatbot'}</a> 來回答你的問題，試試看！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
               	<Button color="primary">跟g0v bot聊聊</Button>
