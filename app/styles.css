@@ -1,11 +1,21 @@
+body {
+  font-family: freight-sans-pro, sans-serif 
+}
+
 .bar {
   padding: 0 20px;
   border-bottom: 1px solid rgba(0,0,0,.12);
 }
 
-.appBarText {
+
+.appBarNav {
   padding-top: 20px;
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.appBarLink, .appBarLink:hover {
+  margin: 0 8px;
+  color: #666;
 }
 
 .headerItem {
@@ -70,9 +80,18 @@
   text-align: left;
 }
 
+.eventInfo p {
+  line-height: 12px;
+}
+
 .infoLabel {
   color: #009c00;
   font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.eventInfo .infoLabel:first-child {
+  margin-top: 0;
 }
 
 .speakerButton {
@@ -190,7 +209,7 @@
 }
 
 @media (max-width: 500px) {
-  .appBarText {
+  .appBarNav {
     display: none;
   }
 
