@@ -44,11 +44,13 @@ export default class ChPages extends React.Component {
                 </span>
               </Link>
             </Col>
-            <Col md="8" className={styles.appBarText}>
-            	<span className={styles.headerItem}><Link to="/schedule">活動流程</Link> </span>
-              <span className={styles.headerItem}><Link to="/speakers">講者介紹</Link> </span>
-              <span className={styles.headerItem}><Link to="/staff">工作人員</Link> </span>
-              <span className={styles.headerItem}><Link to="/en">ENGLISH</Link> </span>
+            <Col md="6" className={styles.appBarNav}>
+            	<span className={styles.appBarLink}><Link to="/schedule">活動流程</Link> </span>
+              <span className={styles.appBarLink}><Link to="/speakers">講者介紹</Link> </span>
+              <span className={styles.appBarLink}><Link to="/staff">工作人員</Link> </span>
+            </Col>
+            <Col md="2" className={styles.appBarNav}>
+              <span><Link className={styles.appBarLink} to="/en">ENGLISH</Link></span>
             </Col>
           </Row>
         </Appbar>
