@@ -10,7 +10,23 @@ import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
 import LandingCH from './LandingCH';
 
+import Dropdown from 'muicss/lib/react/dropdown';
+import DropdownItem from 'muicss/lib/react/dropdown-item';
+
 export default class ChPages extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMenu: false
+    };
+  }
+
+  handleHamburgerClick = () => {
+    this.setState({
+      showMenu: !this.state.showMenu
+    });
+  }
+
   render() {
   	const { children } = this.props;
     return (
@@ -20,18 +36,31 @@ export default class ChPages extends React.Component {
             <Col md="3" md-offset="1">
               <Link to="/">
                 <img src={logo} height="60px" />
+                <span 
+                  className={styles.hamburger}
+                  onClick={this.handleHamburgerClick}
+                >
+                  ☰
+                </span>
               </Link>
             </Col>
-            <Col md="4" className={styles.appBarText}>
+            <Col md="8" className={styles.appBarText}>
             	<span className={styles.headerItem}><Link to="/schedule">活動流程</Link> </span>
               <span className={styles.headerItem}><Link to="/speakers">講者介紹</Link> </span>
               <span className={styles.headerItem}><Link to="/staff">工作人員</Link> </span>
-            </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/en">ENGLISH</Link> </span>
+              <span className={styles.headerItem}><Link to="/en">ENGLISH</Link> </span>
             </Col>
           </Row>
         </Appbar>
+        {
+          this.state.showMenu &&
+          <ul className={styles.dropDownUl}>
+            <li className={styles.headerItemResponsive}><Link to="/schedule" onClick={this.handleHamburgerClick}>活動流程</Link> </li>
+            <li className={styles.headerItemResponsive}><Link to="/speakers" onClick={this.handleHamburgerClick}>講者介紹</Link> </li>
+            <li className={styles.headerItemResponsive}><Link to="/staff" onClick={this.handleHamburgerClick}>工作人員</Link> </li>
+            <li className={styles.headerItemResponsive}><Link to="/en" onClick={this.handleHamburgerClick}>ENGLISH</Link> </li>
+          </ul>
+        }
        	{children}
         <Appbar className={styles.footer}>
           <Row>

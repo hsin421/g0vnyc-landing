@@ -1,5 +1,6 @@
 .bar {
   padding: 0 20px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
 }
 
 .appBarText {
@@ -10,6 +11,10 @@
 .headerItem {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.pageTop {
+  margin-top: 20px;
 }
 
 .hero {
@@ -112,12 +117,17 @@
 
 .speakerImgLin {
   composes: speakerImg;
-  background: url('http://img.epochtimes.com.tw/upload/images/2014/06/29/95462_medium.jpg') no-repeat center center;
+  background: url('./images/lin.jpg') no-repeat center center;
 }
 
 .speakerImgKao {
   composes: speakerImg;
   background: url('./images/kao2.jpg') no-repeat center center;
+}
+
+.speakerImgLi {
+  composes: speakerImg;
+  background: url('./images/li.jpg') no-repeat center center;
 }
 
 .speakerImgNicklin {
@@ -159,4 +169,32 @@
 .staffCardBodyText {
   composes: bodyText;
   text-align:  left;
+}
+
+.hamburger {
+  font-size: 30px;
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  display: none;
+}
+
+.dropDownUl {
+  list-style: none;
+  font-size: 16px;
+  color: #444;
+}
+
+.headerItemResponsive {
+  padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .appBarText {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }

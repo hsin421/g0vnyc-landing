@@ -22,11 +22,11 @@ export default class SpeakersCH extends React.Component {
     return (
       <div>
         <Container className={styles.body}>
-          <Row>
+          <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 活動流程 </h3>
-          		<p className={styles.bodyText}> 這是活動流程 巴拉巴拉巴拉... </p>
+          		<h3 className={styles.heading}> 講者介紹 </h3>
+          		<p className={styles.bodyText}> 這是我們從台灣及美國各地請到.... </p>
           	</Col>
           </Row>
           <Row>

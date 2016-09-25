@@ -22,7 +22,7 @@ export default class Staff extends React.Component {
     return (
       <div>
         <Container className={styles.body}>
-          <Row>
+          <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
           		<h3 className={styles.heading}> 工作人員 </h3>
