@@ -25,7 +25,7 @@ export default class SpeakersCH extends React.Component {
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 講者介紹 </h3>
+          		<h3 className={styles.heading}> 講者介紹(施工中，請幫忙) </h3>
           		<p className={styles.bodyText}> 這是我們從台灣及美國各地請到.... </p>
           	</Col>
           </Row>

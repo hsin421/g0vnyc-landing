@@ -208,6 +208,31 @@ body {
   padding: 5px;
 }
 
+.navButton {
+  background-color: #009c00;
+  color: #fff;
+  height: 35px;
+  line-height: 0;
+  padding: 10px;
+  margin: 0;
+  vertical-align: inherit;
+}
+
+.navButton:hover{
+  background-color: #fff;
+  color: #009c00;
+}
+
+.navButton:active{
+  background-color: #fff;
+  color: #009c00;
+}
+
+.navButton:focus{
+  background-color: #fff;
+  color: #009c00;
+}
+
 @media (max-width: 500px) {
   .appBarNav {
     display: none;

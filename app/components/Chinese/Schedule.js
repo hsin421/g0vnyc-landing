@@ -25,7 +25,7 @@ export default class ScheduleCH extends React.Component {
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 活動流程 </h3>
+          		<h3 className={styles.heading}> 活動流程(施工中，請幫忙) </h3>
           		<p className={styles.bodyText}> 這是活動流程 巴拉巴拉巴拉... </p>
           	</Col>
           </Row>

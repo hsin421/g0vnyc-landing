@@ -4,7 +4,7 @@ import Appbar from 'muicss/lib/react/appbar';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
-
+import Button from 'muicss/lib/react/button';
 import styles from '../../styles.css';
 import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
@@ -48,6 +48,18 @@ export default class ChPages extends React.Component {
             	<span className={styles.appBarLink}><Link to="/schedule">活動流程</Link> </span>
               <span className={styles.appBarLink}><Link to="/speakers">講者介紹</Link> </span>
               <span className={styles.appBarLink}><Link to="/staff">工作人員</Link> </span>
+              <span className={styles.appBarLink}>
+                <a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
+                  target="_blank">
+                  <Button color="accent" className={styles.navButton}>捐款</Button>
+                </a> 
+              </span>
+              <span className={styles.appBarLink}>
+                <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
+                  target="_blank">
+                  <Button color="primary" className={styles.navButton}>報名</Button>
+                </a>
+              </span>
             </Col>
             <Col md="2" className={styles.appBarNav}>
               <span><Link className={styles.appBarLink} to="/en">ENGLISH</Link></span>
