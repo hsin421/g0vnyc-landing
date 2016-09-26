@@ -37,20 +37,20 @@ export default class SpeakersCH extends React.Component {
           <Row>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>總招</h3>
-          			<p className={styles.staffCardBodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
+          			<h3 className={styles.staffCardHeading}>林雨蒼</h3>
+          			<p className={styles.staffCardBodyText}> Blah blah blah... </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>設計組</h3>
-          			<p className={styles.staffCardBodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
+          			<h3 className={styles.staffCardHeading}>高嘉良</h3>
+          			<p className={styles.staffCardBodyText}>Blah blah blah </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>公關組</h3>
-          			<p className={styles.staffCardBodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
+          			<h3 className={styles.staffCardHeading}>Andrew Nicklin</h3>
+          			<p className={styles.staffCardBodyText}>Blah blah lorem ipsum... </p>
           		</div>
           	</Col>
           </Row>

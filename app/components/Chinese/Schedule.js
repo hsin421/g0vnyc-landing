@@ -37,20 +37,20 @@ export default class ScheduleCH extends React.Component {
           <Row>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>總招</h3>
-          			<p className={styles.staffCardBodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
+          			<h3 className={styles.staffCardHeading}>9:00 - 10:00</h3>
+          			<p className={styles.staffCardBodyText}>Doing something... </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>設計組</h3>
-          			<p className={styles.staffCardBodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
+          			<h3 className={styles.staffCardHeading}>10:00 - 11:00</h3>
+          			<p className={styles.staffCardBodyText}>Doing something else... </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>公關組</h3>
-          			<p className={styles.staffCardBodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
+          			<h3 className={styles.staffCardHeading}>11:00 - 12:00</h3>
+          			<p className={styles.staffCardBodyText}>Eating Taiwan Bear House.. </p>
           		</div>
           	</Col>
           </Row>
