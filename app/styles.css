@@ -18,6 +18,10 @@ body {
   color: #666;
 }
 
+.appBarLink:hover {
+  border-bottom:3px solid #009c00;
+}
+
 .headerItem {
   margin-right: 10px;
   margin-left: 10px;
