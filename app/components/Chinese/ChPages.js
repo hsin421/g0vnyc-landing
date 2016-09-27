@@ -45,24 +45,20 @@ export default class ChPages extends React.Component {
               </Link>
             </Col>
             <Col md="6" className={styles.appBarNav}>
-            	<span className={styles.appBarLink}><Link to="/schedule">活動流程</Link> </span>
-              <span className={styles.appBarLink}><Link to="/speakers">講者介紹</Link> </span>
-              <span className={styles.appBarLink}><Link to="/staff">工作人員</Link> </span>
-              <span className={styles.appBarLink}>
-                <a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
-                  target="_blank">
-                  <Button color="accent" className={styles.navButton}>捐款</Button>
-                </a> 
-              </span>
-              <span className={styles.appBarLink}>
-                <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
-                  target="_blank">
-                  <Button color="primary" className={styles.navButton}>報名</Button>
-                </a>
-              </span>
+              <Link to="/schedule" className={styles.navLink} activeClassName={styles.navLinkSelected}>活動流程</Link>
+              <Link to="/speakers" className={styles.navLink} activeClassName={styles.navLinkSelected}>講者介紹</Link>
+              <Link to="/staff" className={styles.navLink} activeClassName={styles.navLinkSelected}>工作人員</Link>
+              <a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
+                target="_blank">
+                <Button color="accent" className={styles.navButton}>捐款</Button>
+              </a> 
+              <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
+                target="_blank">
+                <Button color="primary" className={styles.navButton}>報名</Button>
+              </a>
             </Col>
             <Col md="2" className={styles.appBarNav}>
-              <span><Link className={styles.appBarLink} to="/en">ENGLISH</Link></span>
+              <Link className={styles.langLink} to="/en">ENGLISH</Link>
             </Col>
           </Row>
         </Appbar>

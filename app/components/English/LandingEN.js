@@ -27,11 +27,11 @@ export default class LandingEN extends React.Component {
               <img src={logo} height="60px" />
             </Col>
             <Col md="6" className={styles.appBarNav}>
-              <span><Link className={styles.appBarLink} to="">Staff</Link></span>
-              <span><Link className={styles.appBarLink} to="">Schedule</Link></span>
+              <span><Link className={styles.navLink} to="">Staff</Link></span>
+              <span><Link className={styles.navLink} to="">Schedule</Link></span>
             </Col>
             <Col md="2" className={styles.appBarNav}>
-            	<span className={styles.appBarLink}><Link to="/">中文</Link> </span>
+            	<span className={styles.langLink}><Link to="/">中文</Link></span>
             </Col>
           </Row>
         </Appbar>
