@@ -240,6 +240,12 @@ body {
   padding: 5px;
 }
 
+@media (min-width: 501px) {
+  .dropDownUl {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .appBarNav {
     display: none;
