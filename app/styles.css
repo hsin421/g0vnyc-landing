@@ -7,19 +7,47 @@ body {
   border-bottom: 1px solid rgba(0,0,0,.12);
 }
 
-
 .appBarNav {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 15px;
 }
 
-.appBarLink, .appBarLink:hover {
+.navLink {
   margin: 0 8px;
-  color: #666;
+  color: #444;
+  padding-bottom: 18px;
 }
 
-.appBarLink:hover {
-  border-bottom:3px solid #009c00;
+.navLinkSelected {
+  color: #009c00;
+  border-bottom: 5px solid #009c00;
+}
+
+.navLink:hover, .navLink:focus {
+  color: #009c00;
+}
+
+.navButton {
+  background-color: #009c00;
+  color: #fff;
+  height: 35px;
+  line-height: 0;
+  padding: 10px;
+  margin: 0 8px;
+  vertical-align: inherit;
+}
+
+.navButton:hover, .navButton:active, .navButton:focus {
+  background-color: #fff;
+  color: #009c00;
+}
+
+.langLink {
+  line-height: 35px;
+}
+
+.langLink:hover {
+  text-decoration: underline;
 }
 
 .headerItem {
@@ -212,29 +240,10 @@ body {
   padding: 5px;
 }
 
-.navButton {
-  background-color: #009c00;
-  color: #fff;
-  height: 35px;
-  line-height: 0;
-  padding: 10px;
-  margin: 0;
-  vertical-align: inherit;
-}
-
-.navButton:hover{
-  background-color: #fff;
-  color: #009c00;
-}
-
-.navButton:active{
-  background-color: #fff;
-  color: #009c00;
-}
-
-.navButton:focus{
-  background-color: #fff;
-  color: #009c00;
+@media (min-width: 501px) {
+  .dropDownUl {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
