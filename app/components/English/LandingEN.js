@@ -36,7 +36,7 @@ export default class LandingEN extends React.Component {
           </Row>
         </Appbar>
         <div className={styles.hero} />
-        <Container className={styles.body}>
+        <Container className={styles.landingBody}>
         	<Row>
 	          <Col md="8" md-offset="2">
   	          <h3 className={styles.heading}> 2016 g0v hackathon @ NYC</h3>
