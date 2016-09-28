@@ -113,7 +113,7 @@ body {
 }
 
 .eventInfo p {
-  line-height: 12px;
+  margin: 5px 0;
 }
 
 .infoLabel {
