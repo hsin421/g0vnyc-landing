@@ -256,6 +256,48 @@ body {
   padding: 5px;
 }
 
+/* Schedule Page */
+
+.scheduleControl {
+  height: 45px;
+  border-bottom: 3px solid #009c00;
+  background-color: rgba(0,0,0,.12);
+  display: flex;
+}
+
+.scheduleDate {
+  font-size: 16px;
+  font-weight: 700;
+  width: 90px;
+  padding-top: 13px;
+  padding-left: 26px;
+  cursor: pointer;
+  color: #444;
+}
+
+.scheduleDateSelected {
+  composes: scheduleDate;
+  color: #fff;
+  background-color: #009c00;
+}
+
+.scheduleDate:hover{
+  color: #009c00;
+}
+
+.scheduleDateSelected:hover{
+  color: #FFF;
+}
+
+.scheduleDateHeader {
+  height: 50px;
+  color: #444;
+  padding-left: 23px;
+  border-bottom: 1px solid black;
+}
+
+/* End schedule page */
+
 @media (min-width: 501px) {
   .dropDownUl {
     display: none;

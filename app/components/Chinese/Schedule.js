@@ -25,20 +25,23 @@ export default class ScheduleCH extends React.Component {
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 活動流程(施工中，請幫忙) </h3>
+          		<h3 className={styles.heading}> 活動流程 </h3>
           		<p className={styles.bodyText}> 這是活動流程 巴拉巴拉巴拉... </p>
           	</Col>
           </Row>
           <Row>
           	<Col md="8" md-offset="2">
-          		<div className={styles.greenDivider} />
+          		<div className={styles.scheduleControl} >
+                <div className={styles.scheduleDate}>11/03</div>
+                <div className={styles.scheduleDateSelected}>11/04</div>
+                <div className={styles.scheduleDate}>11/05</div>
+              </div>
           	</Col>
           </Row>
           <Row>
           	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>9:00 - 10:00</h3>
-          			<p className={styles.staffCardBodyText}>Doing something... </p>
+          		<div className={styles.scheduleDateHeader}>
+          			<h3 className={styles.staffCardHeading}>Saturday, 11/05</h3>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
