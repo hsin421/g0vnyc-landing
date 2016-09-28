@@ -133,22 +133,25 @@ export default class LandingCH extends React.Component {
                 </div>
               </div>
 	      		</Col>
-	      		<Button color="primary" className={styles.speakerButton}>認識講者</Button>
       		</Row>
-          {/*<Row className={styles.speakerSection}>
+          <Row className={styles.speakerSection}>
             <p className={styles.bodyTextBold}>同場加映</p>
             <p className={styles.bodyText}>11.4 週五晚上 哲學星期五講者</p>
             <Col md="4" md-offset="4">
               <div className={styles.speakerCard}>
                 <div className={styles.speakerInfo}>
-                 <img src={liPhoto} height={100} />
+                 <div className={styles.speakerImgLi}>
+                 </div>
                  <h5 className={styles.speakerTitle}>李務熙</h5>
                  <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
                  <p className={styles.speakerSubtitle}>InMusic 創辦人</p>
                 </div>
               </div>
             </Col>
-          </Row>*/}
+            <Col md="12">
+              <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>認識講者</Button></Link>
+            </Col>
+          </Row>
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> 主辦單位 </h3>
