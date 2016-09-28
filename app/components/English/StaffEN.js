@@ -21,79 +21,72 @@ export default class Staff extends React.Component {
   render() {
     return (
       <div>
-        <Appbar className={styles.bar}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logo} height="60px" />
-            </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span> </span>
-            </Col>
-            <Col md="4" className={styles.appBarText}>
-            	<span><Link to="/en">ENGLISH</Link> </span>
-            </Col>
-          </Row>
-        </Appbar>
         <Container className={styles.pageBody}>
-          <Row>
-          	<Col md="4" md-offset="4">
-          		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 工作人員 </h3>
-          		<p className={styles.bodyText}> 感謝在紐約這群身懷絕技又願意為g0v努力不懈的「沒有人」！ </p>
-          	</Col>
+          <Row className={styles.pageTop}>
+            <Col md="4" md-offset="4">
+              <img src={calendarIcon} className={styles.icon} />
+              <h3 className={styles.heading}> Staff </h3>
+              <p className={styles.bodyText}> We sincerely appreciate all who pitched in to help make g0v@NYC happen! </p>
+            </Col>
           </Row>
           <Row>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.greenDivider} />
-          	</Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.greenDivider} />
+            </Col>
           </Row>
           <Row>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>總招</h3>
-          			<p className={styles.bodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
-          		</div>
-          	</Col>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>設計組</h3>
-          			<p className={styles.bodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
-          		</div>
-          	</Col>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>公關組</h3>
-          			<p className={styles.bodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
-          		</div>
-          	</Col>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>活動組</h3>
-          			<p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B, Monica Hsiao </p>
-          		</div>
-          	</Col>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>募款組</h3>
-          			<p className={styles.bodyText}>Larry Lin, Jennifer Liu, Po-Yao Chang </p>
-          		</div>
-          	</Col>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.staffCard}>
-          			<h3 className={styles.staffCardHeading}>場地組</h3>
-          			<p className={styles.bodyText}>Yo-Chen Lin, Ching S Huang</p>
-          		</div>
-          	</Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Directors</h3>
+                <p className={styles.bodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Coordinators</h3>
+                <p className={styles.bodyText}>Yi Hsuan Hsu, Ting-An Lin, 阿肥, 章廣庭, 黃韻儒, Dealia Chen, Eva Tsai </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Designers</h3>
+                <p className={styles.bodyText}>Meng Chih Chien, Angel Chen, Tim Lee, Chien-Ju Peng </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Public Relation</h3>
+                <p className={styles.bodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Event Planners</h3>
+                <p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B</p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Fundraisers</h3>
+                <p className={styles.bodyText}>Jennifer Liu </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Accountants</h3>
+                <p className={styles.bodyText}>王小倩, 郭安宜 </p>
+              </div>
+            </Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>Venue support</h3>
+                <p className={styles.bodyText}>Yo-Chen Lin, Ching S Huang</p>
+              </div>
+            </Col>
           </Row>
         </Container>
-        <Appbar className={styles.footer}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logoDark} height="20px" className={styles.footerLogo}/>
-            </Col>
-          </Row>
-        </Appbar>
       </div>
     );
   }
 }
+

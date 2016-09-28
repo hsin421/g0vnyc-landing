@@ -21,20 +21,6 @@ export default class LandingEN extends React.Component {
   render() {
     return (
       <div>
-        <Appbar className={styles.bar}>
-          <Row>
-            <Col md="2" md-offset="1">
-              <img src={logo} height="60px" />
-            </Col>
-            <Col md="6" className={styles.appBarNav}>
-              <span><Link className={styles.navLink} to="">Staff</Link></span>
-              <span><Link className={styles.navLink} to="">Schedule</Link></span>
-            </Col>
-            <Col md="2" className={styles.appBarNav}>
-            	<span className={styles.langLink}><Link to="/">中文</Link></span>
-            </Col>
-          </Row>
-        </Appbar>
         <div className={styles.hero} />
         <Container className={styles.landingBody}>
         	<Row>
@@ -148,6 +134,24 @@ export default class LandingEN extends React.Component {
 	      		</Col>
 	      		{/*<Button color="primary" className={styles.speakerButton}>認識講者</Button>*/}
       		</Row>
+          <Row className={styles.speakerSection}>
+            <p className={styles.bodyTextBold}>There's More...</p>
+            <p className={styles.bodyText}>11.4 Friday Night Cafe Philo「Hackaton Series」Speaker</p>
+            <Col md="4" md-offset="4">
+              <div className={styles.speakerCard}>
+                <div className={styles.speakerInfo}>
+                 <div className={styles.speakerImgLi}>
+                 </div>
+                 <h5 className={styles.speakerTitle}>Li, Wu-Hsi</h5>
+                 <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
+                 <p className={styles.speakerSubtitle}>InMusic Founder</p>
+                </div>
+              </div>
+            </Col>
+            <Col md="12">
+              <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>More on Speakers</Button></Link>
+            </Col>
+          </Row>
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> Host </h3>
@@ -177,13 +181,6 @@ export default class LandingEN extends React.Component {
       			</Col>
       		</Row>
         </Container>
-        <Appbar className={styles.footer}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logoDark} height="20px" className={styles.footerLogo}/>
-            </Col>
-          </Row>
-        </Appbar>
       </div>
     );
   }
