@@ -36,13 +36,13 @@ export default class ChPages extends React.Component {
             <Col md="3" md-offset="1">
               <Link to="/">
                 <img src={logo} height="60px" />
-                <span 
-                  className={styles.hamburger}
-                  onClick={this.handleHamburgerClick}
-                >
-                  ☰
-                </span>
               </Link>
+              <span 
+                className={styles.hamburger}
+                onClick={this.handleHamburgerClick}
+              >
+                ☰
+              </span>
             </Col>
             <Col md="6" className={styles.appBarNav}>
               <Link to="/schedule" className={styles.navLink} activeClassName={styles.navLinkSelected}>活動流程</Link>

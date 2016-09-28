@@ -9,9 +9,7 @@ import Col from 'muicss/lib/react/col';
 import { Link } from 'react-router';
 
 import styles from '../../styles.css';
-import calendarIcon from '../../images/icon_event.png';
-import sponsorIcon from '../../images/icon_sponsors.png';
-import speakersIcon from '../../images/icon_speakers.png';
+import staffIcon from '../../images/icon_teams.png';
 import mapImg from '../../images/map.jpg';
 import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
@@ -24,7 +22,7 @@ export default class Staff extends React.Component {
         <Container className={styles.pageBody}>
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
-          		<img src={calendarIcon} className={styles.icon} />
+          		<img src={staffIcon} className={styles.icon} />
           		<h3 className={styles.heading}> 工作人員 </h3>
           		<p className={styles.bodyText}> 感謝在紐約這群身懷絕技又願意為g0v努力不懈的「沒有人」！ </p>
           	</Col>
