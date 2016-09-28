@@ -136,19 +136,19 @@ export default class ScheduleCH extends React.Component {
                   onClick={() => this.handleSelectDate(4)}
                   className={dateStyle(4, selectedDate)}
                 >
-                  11/03
+                  11/04
                 </div>
                 <div 
                   onClick={() => this.handleSelectDate(5)}
                   className={dateStyle(5, selectedDate)}
                 >
-                  11/04
+                  11/05
                 </div>
                 <div 
                   onClick={() => this.handleSelectDate(6)}
                   className={dateStyle(6, selectedDate)}
                 >
-                  11/05
+                  11/06
                 </div>
               </div>
           	</Col>
@@ -156,7 +156,7 @@ export default class ScheduleCH extends React.Component {
           <Row>
           	<Col md="8" md-offset="2">
           		<div className={styles.scheduleDateHeader}>
-          			<h3 className={styles.staffCardHeading}>Saturday, 11/05</h3>
+          			<h3 className={styles.staffCardHeading}>{selectedDate === 4 ? 'Friday, 11/04' : (selectedDate === 5 ? 'Saturday, 11/05' : 'Sunday, 11/06')}</h3>
           		</div>
               {selectedDate === 4 ? Nov4Schedule : (selectedDate === 5 ? Nov5Schedule : Nov6Schedule)}
               <div>

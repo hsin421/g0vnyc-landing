@@ -136,7 +136,7 @@ export default class LandingCH extends React.Component {
       		</Row>
           <Row className={styles.speakerSection}>
             <p className={styles.bodyTextBold}>同場加映</p>
-            <p className={styles.bodyText}>11.4 週五晚上 哲學星期五講者</p>
+            <p className={styles.bodyText}>11.4 週五晚上 哲學星期五「黑客松系列講座」講者</p>
             <Col md="4" md-offset="4">
               <div className={styles.speakerCard}>
                 <div className={styles.speakerInfo}>

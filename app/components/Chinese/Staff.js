@@ -41,30 +41,42 @@ export default class Staff extends React.Component {
           			<p className={styles.bodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
           		</div>
           	</Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>聯絡組</h3>
+                <p className={styles.bodyText}>Yi Hsuan Hsu, Ting-An Lin, 阿肥, 章廣庭, 黃韻儒, Dealia Chen, Eva Tsai </p>
+              </div>
+            </Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>設計組</h3>
-          			<p className={styles.bodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
+          			<p className={styles.bodyText}>Meng Chih Chien, Angel Chen, Tim Lee, Chien-Ju Peng </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>公關組</h3>
-          			<p className={styles.bodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
+          			<p className={styles.bodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>活動組</h3>
-          			<p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B, Monica Hsiao </p>
+          			<p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B</p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>募款組</h3>
-          			<p className={styles.bodyText}>Larry Lin, Jennifer Liu, Po-Yao Chang </p>
+          			<p className={styles.bodyText}>Jennifer Liu </p>
           		</div>
           	</Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.staffCard}>
+                <h3 className={styles.staffCardHeading}>會計組</h3>
+                <p className={styles.bodyText}>王小倩, 郭安宜 </p>
+              </div>
+            </Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>場地組</h3>
