@@ -21,7 +21,7 @@ export default class ScheduleCH extends React.Component {
   render() {
     return (
       <div>
-        <Container className={styles.body}>
+        <Container className={styles.pageBody}>
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />

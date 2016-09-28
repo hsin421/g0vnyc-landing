@@ -34,7 +34,7 @@ export default class Staff extends React.Component {
             </Col>
           </Row>
         </Appbar>
-        <Container className={styles.body}>
+        <Container className={styles.pageBody}>
           <Row>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
@@ -51,37 +51,37 @@ export default class Staff extends React.Component {
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>總招</h3>
-          			<p className={styles.staffCardBodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
+          			<p className={styles.bodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>設計組</h3>
-          			<p className={styles.staffCardBodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
+          			<p className={styles.bodyText}>Meng Chih Chien, Tian-Liang Huang, Angel Chen, Tim Lee, Chien-Ju Peng, Shih-Yen Lin, Lu-Ting Feng </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>公關組</h3>
-          			<p className={styles.staffCardBodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
+          			<p className={styles.bodyText}>Alice Hung, Shun Wang, Iris Shih-Yin Chen, Lala Yao, Hsin-Ling Liao </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>活動組</h3>
-          			<p className={styles.staffCardBodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B, Monica Hsiao </p>
+          			<p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B, Monica Hsiao </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>募款組</h3>
-          			<p className={styles.staffCardBodyText}>Larry Lin, Jennifer Liu, Po-Yao Chang </p>
+          			<p className={styles.bodyText}>Larry Lin, Jennifer Liu, Po-Yao Chang </p>
           		</div>
           	</Col>
           	<Col md="8" md-offset="2">
           		<div className={styles.staffCard}>
           			<h3 className={styles.staffCardHeading}>場地組</h3>
-          			<p className={styles.staffCardBodyText}>Yo-Chen Lin, Ching S Huang</p>
+          			<p className={styles.bodyText}>Yo-Chen Lin, Ching S Huang</p>
           		</div>
           	</Col>
           </Row>

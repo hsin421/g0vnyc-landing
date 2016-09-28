@@ -23,7 +23,7 @@ export default class LandingCH extends React.Component {
     return (
       <div>
         <div className={styles.hero} />
-        <Container className={styles.body}>
+        <Container className={styles.landingBody}>
         	<Row>
 	          <Col md="8" md-offset="2">
   	          <h3 className={styles.heading}>「紐」轉台灣 g0v黑客松</h3>
