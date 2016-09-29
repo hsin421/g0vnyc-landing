@@ -29,18 +29,18 @@ export default class SpeakersCH extends React.Component {
           	</Col>
           </Row>
           <Row>
-          	<Col md="8" md-offset="2">
-          		<div className={styles.greenDivider} />
-          	</Col>
+            <Col md="8" md-offset="2">
+              <div className={styles.greenDivider} />
+            </Col>
           </Row>
           <Row className={styles.speakerBio}>
-          	<Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgLin + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
-        			<h3 className={styles.speakerTitle}>林雨蒼</h3>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
+              <h3 className={styles.speakerTitle}>林雨蒼</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者、公民記者</h4>
-        			<p className={styles.staffCardBodyText}>
+              <p className={styles.staffCardBodyText}>
                 中山大學生科系畢業，研究所主要專研動物生理學研究，同
                 時開始自學程式，並參與撰寫 Lazyscript 專案。由於撰寫程式的經驗，因此有機會到中國
                 擔任四年的工程師；但卻因為看見中國政府統治的荒謬而開始針對時事撰寫文章，希望能
@@ -49,7 +49,7 @@ export default class SpeakersCH extends React.Component {
                 及研究政策，為公開透明盡一份心力。 目前雨蒼卸下民間司法改革基金會的工作，擔任
                 台灣不當黨產委員會委員，透過其資訊科技與司法政策的專長，為開放政府與公平正義的理想打拼。
                </p>
-          	</Col>
+            </Col>
           </Row>
           <Row>
             <Col md="8" md-offset="2">
@@ -57,10 +57,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgKao + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>高嘉良</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者</h4>
               <p className={styles.staffCardBodyText}>
@@ -80,10 +80,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgNicklin + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>Andrew Nicklin</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者</h4>
               <p className={styles.staffCardBodyText}>
@@ -97,10 +97,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgLi + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>李務熙</h3>
               <h4 className={styles.speakerSubtitle}>MIT Media Lab PhD</h4>
               <p className={styles.staffCardBodyText}>
