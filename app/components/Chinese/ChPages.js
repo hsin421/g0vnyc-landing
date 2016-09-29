@@ -9,7 +9,7 @@ import styles from '../../styles.css';
 import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
 import LandingCH from './LandingCH';
-
+import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
 import DropdownItem from 'muicss/lib/react/dropdown-item';
 
@@ -72,13 +72,15 @@ export default class ChPages extends React.Component {
           </ul>
         }
        	{children}
-        <Appbar className={styles.footer}>
-          <Row>
-            <Col md="3" md-offset="1">
-              <img src={logoDark} height="20px" className={styles.footerLogo}/>
-            </Col>
-          </Row>
-        </Appbar>
+          <Appbar className={styles.footer}>
+             <Container>
+              <Row>
+                <Col md="12">
+                  <img src={logoDark} height="20px" className={styles.footerLogo}/>
+                </Col>
+              </Row>
+            </Container>
+          </Appbar>
       </div>
     );
   }
