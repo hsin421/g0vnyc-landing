@@ -34,10 +34,10 @@ export default class SpeakersCH extends React.Component {
           	</Col>
           </Row>
           <Row className={styles.speakerBio}>
-          	<Col md="2" md-offset="2">
+          	<Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgLin + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
         			<h3 className={styles.speakerTitle}>林雨蒼</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者、公民記者</h4>
         			<p className={styles.staffCardBodyText}>
@@ -57,10 +57,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgKao + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>高嘉良</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者</h4>
               <p className={styles.staffCardBodyText}>
@@ -80,10 +80,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgNicklin + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>Andrew Nicklin</h3>
               <h4 className={styles.speakerSubtitle}>自由軟體工作者</h4>
               <p className={styles.staffCardBodyText}>
@@ -97,10 +97,10 @@ export default class SpeakersCH extends React.Component {
             </Col>
           </Row>
           <Row className={styles.speakerBio}>
-            <Col md="2" md-offset="2">
+            <Col lg="2" lg-offset="2" md="2" md-offset="5" xs="6" xs-offset="3">
               <div className={styles.speakerImgLi + ' ' + styles.speakerAvatar} />
             </Col>
-            <Col md="6" className={styles.speakerDetail}>
+            <Col lg="6" lg-offset="0" md="8" md-offset="2" xs="12" className={styles.speakerDetail}>
               <h3 className={styles.speakerTitle}>李務熙</h3>
               <h4 className={styles.speakerSubtitle}>MIT Media Lab PhD</h4>
               <p className={styles.staffCardBodyText}>
