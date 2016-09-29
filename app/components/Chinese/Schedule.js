@@ -21,7 +21,7 @@ export default class ScheduleCH extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedDate: null
+      selectedDate: 5
     }
   }
 
