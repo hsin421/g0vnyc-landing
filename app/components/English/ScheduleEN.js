@@ -21,7 +21,7 @@ export default class ScheduleCH extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedDate: null
+      selectedDate: 5
     }
   }
 
@@ -48,11 +48,11 @@ export default class ScheduleCH extends React.Component {
       <div className={styles.scheduleBox}>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>18:30 - 20:00</div>
-          <div className={styles.scheduleItemActivity}>紐約哲五 歡迎茶會 </div>
+          <div className={styles.scheduleItemActivity}>Cafe Philo Kickoff Party </div>
         </div>
         <div className={styles.scheduleItemWide}>
           <div className={styles.scheduleItemTime}>20:00 - 21:30</div>
-          <div className={styles.scheduleItemActivity}>紐約哲五 黑客講座 <p>講者： 李務熙 </p> </div>
+          <div className={styles.scheduleItemActivity}>Cafe Philo Talk <p>Speaker： Li, Wu-Hsi </p> </div>
         </div>
       </div>
     );
@@ -61,27 +61,27 @@ export default class ScheduleCH extends React.Component {
       <div className={styles.scheduleBox}>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>08:45 - 09:15</div>
-          <div className={styles.scheduleItemActivity}>報到 </div>
+          <div className={styles.scheduleItemActivity}>Register </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>09:15 - 09:30</div>
-          <div className={styles.scheduleItemActivity}>開幕 </div>
+          <div className={styles.scheduleItemActivity}>Opening </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>09:30 - 09:45</div>
-          <div className={styles.scheduleItemActivity}>活動流程說明 </div>
+          <div className={styles.scheduleItemActivity}>Announcements </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>09:45 - 10:30</div>
-          <div className={styles.scheduleItemActivity}>黑客松提案 </div>
+          <div className={styles.scheduleItemActivity}>Hackathon Project Presentations </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>10:30 - 11:00</div>
-          <div className={styles.scheduleItemActivity}>揪團討論 </div>
+          <div className={styles.scheduleItemActivity}>Discussion and Grouping </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>11:00 - 23:00</div>
-          <div className={styles.scheduleItemActivity}>實作 </div>
+          <div className={styles.scheduleItemActivity}>Hacking Away! </div>
         </div>
       </div>
     );
@@ -90,23 +90,23 @@ export default class ScheduleCH extends React.Component {
       <div className={styles.scheduleBox}>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>07:40 - 09:00</div>
-          <div className={styles.scheduleItemActivity}>早餐 </div>
+          <div className={styles.scheduleItemActivity}>Breakfast </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>07:00 - 10:30</div>
-          <div className={styles.scheduleItemActivity}>討論及實作 </div>
+          <div className={styles.scheduleItemActivity}>More hacking </div>
         </div>
         <div className={styles.scheduleItemWide}>
           <div className={styles.scheduleItemTime}>10:30 - 12:00</div>
-          <div className={styles.scheduleItemActivity}>論壇主題一 <p>Andrew Nicklin</p></div>
+          <div className={styles.scheduleItemActivity}>Forum I <p>Andrew Nicklin</p></div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>12:00 - 13:00</div>
-          <div className={styles.scheduleItemActivity}>午餐交流 </div>
+          <div className={styles.scheduleItemActivity}>Lunch and talk </div>
         </div>
         <div className={styles.scheduleItemWide}>
           <div className={styles.scheduleItemTime}>13:00 - 14:45</div>
-          <div className={styles.scheduleItemActivity}>論壇主題二 <p>林雨蒼 x 高嘉良</p> </div>
+          <div className={styles.scheduleItemActivity}>Forum II <p>Billy Lin x CL Kao</p> </div>
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>14:45 - 15:00</div>
@@ -114,7 +114,7 @@ export default class ScheduleCH extends React.Component {
         </div>
         <div className={styles.scheduleItem}>
           <div className={styles.scheduleItemTime}>15:00 - 16:45</div>
-          <div className={styles.scheduleItemActivity}>成果發表 </div>
+          <div className={styles.scheduleItemActivity}>Results Presentation </div>
         </div>
       </div>
     )
@@ -125,8 +125,8 @@ export default class ScheduleCH extends React.Component {
           <Row className={styles.pageTop}>
           	<Col md="4" md-offset="4">
           		<img src={calendarIcon} className={styles.icon} />
-          		<h3 className={styles.heading}> 活動流程 </h3>
-          		<p className={styles.bodyText}> 本次黑客松詳細活動流程 </p>
+          		<h3 className={styles.heading}> Schedule </h3>
+          		<p className={styles.bodyText}> Tentative hackathon schedule of activities </p>
           	</Col>
           </Row>
           <Row>
@@ -160,11 +160,11 @@ export default class ScheduleCH extends React.Component {
           		</div>
               {selectedDate === 4 ? Nov4Schedule : (selectedDate === 5 ? Nov5Schedule : Nov6Schedule)}
               <div>
-                <h3>備註</h3>
+                <h3>Note</h3>
                 <ul>
-                  <li>活動全程提供食物(正餐及點心)和飲料（咖啡、果汁等）</li>
-                  <li>設有休息、放鬆閒聊區</li>
-                  <li>主辦單位準備睡袋數個，供有需要的夥伴使用</li>
+                  <li>Food is provided throughout the hackathon (meal and snacks) and drinks（coffee & juice）</li>
+                  <li>The venue has sofa and lounges for resting and relaxation</li>
+                  <li>Sleeping bags may be available upon request</li>
                 </ul>
               </div>
           	</Col>

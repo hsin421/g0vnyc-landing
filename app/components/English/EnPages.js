@@ -34,7 +34,7 @@ export default class ChPages extends React.Component {
         <Appbar className={styles.bar}>
           <Row>
             <Col md="3" md-offset="1">
-              <Link to="/">
+              <Link to="/en">
                 <img src={logo} height="60px" />
               </Link>
               <span 

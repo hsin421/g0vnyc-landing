@@ -50,8 +50,8 @@ export default class LandingEN extends React.Component {
             	<h4 className={styles.infoLabel}>Date</h4>
             	<p className={styles.bodyTextBold}> 11/5 (Sat) - 11/6 (Sun) </p>
             	<p className={styles.bodyText}>
-                <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43'>
-                  {'Forecast.'}
+                <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43' target="_blank">
+                  {'Forecast. '}
                 </a>
                   Working overnight is optional.
               </p>
@@ -65,13 +65,11 @@ export default class LandingEN extends React.Component {
             	<h4 className={styles.infoLabel}>Who should attend</h4>
             	<p className={styles.bodyTextBold}>You and your love for open gov / open data</p>
             	<p className={styles.bodyText}>...and your laptop</p>
-            	<h4 className={styles.infoLabel}>More Questions？</h4>
-            	<p className={styles.bodyText}>We wrote a 
-            	<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq" target="_blank">
-            	{'chatbot'}</a> to answer them. Give it a try！</p>
+            	<h4 className={styles.infoLabel}>How about food, overnight stay, or travel grant？</h4>
+            	<p className={styles.bodyText}>We wrote a chatbot to answer them. Give it a try！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
-              	<Button color="primary">Chat with g0v bot</Button>
+              	<Button color="primary">Say hi our bot</Button>
               </a>
             </Col>
           </Row>

@@ -53,8 +53,8 @@ export default class LandingCH extends React.Component {
             	<h4 className={styles.infoLabel}>資訊</h4>
             	<p className={styles.bodyTextBold}> 11/5 (Sat) - 11/6 (Sun) </p>
             	<p className={styles.bodyText}>
-                <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43'>
-                  {'Forecast.'}
+                <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43' target="_blank">
+                  {'Forecast. '}
                 </a>
                   Working overnight is optional.
               </p>
@@ -67,11 +67,9 @@ export default class LandingCH extends React.Component {
               </p>
             	<h4 className={styles.infoLabel}>招募對象</h4>
             	<p className={styles.bodyTextBold}>熱血如火的你！</p>
-            	<p className={styles.bodyText}>請自備電腦</p>
-            	<h4 className={styles.infoLabel}>還有問題？</h4>
-            	<p className={styles.bodyText}>我們寫了一個 
-            	<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.v0tviytqq" target="_blank">
-            	{'chatbot'}</a> 來回答你的問題，試試看！</p>
+            	<p className={styles.bodyText}>...請自備電腦</p>
+            	<h4 className={styles.infoLabel}>那餐點、過夜、旅費補助呢？</h4>
+            	<p className={styles.bodyText}>我們寫了一個 chatbot 來回答你的問題，試試看！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
               	<Button color="primary">跟g0v bot聊聊</Button>
