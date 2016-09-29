@@ -79,8 +79,9 @@ export default class LandingEN extends React.Component {
                 <img src={sponsorIcon} className={styles.icon} />
               	<h3 className={styles.heading}> Sponsor Us</h3>
               	<p className={styles.bodyTextWhite}> 
-              		Hackathons don't host themselves. We need all the help we can get! Our invited speakers fly all over the world to NYC. 
-              		We reimburse out-of-state hackers and in g0v hackathons dishes of Taiwanese delicacy flow in endless supply. 
+              		Hackathons don't host themselves. We need all the help we can get! 
+                  Our invited speakers fly from all over the world to NYC. 
+              		We reimburse out-of-state hackers and at the event, dishes of Taiwanese delicacies will flow in endless supply. 
               		Chip in to help make this an unforgettable experience for our hackers, speakers and staff!
               	</p>
               	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
