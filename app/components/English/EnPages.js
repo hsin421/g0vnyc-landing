@@ -10,6 +10,7 @@ import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
 import socialFacebook from '../../images/icon_facebook_green.png';
 import socialEmail from '../../images/icon_email_green.png';
+import socialGithub from '../../images/icon_github_green.png';
 import LandingEN from './LandingEN';
 import Container from 'muicss/lib/react/container';
 import Dropdown from 'muicss/lib/react/dropdown';
@@ -63,7 +64,8 @@ export default class ChPages extends React.Component {
               <Col md="3" className={styles.appBarExtra}>
                 <Link className={styles.langLink} to="/">中文</Link>
                 <a className={styles.socialIcon} href="https://www.facebook.com/groups/1594251577470003/" target="_blank"><img src={socialFacebook} /></a>
-                <a className={styles.socialIcon} href="mailto:xxx@mail.com" target="_blank"><img src={socialEmail} /></a>
+                <a className={styles.socialIcon} href="https://github.com/hsin421/g0vnyc-landing" target="_blank"><img src={socialGithub} /></a>
+                <a className={styles.socialIcon} href="mailto:pr@g0vnyc.org"><img src={socialEmail} /></a>
               </Col>
             </Row>
           </div>
@@ -77,7 +79,8 @@ export default class ChPages extends React.Component {
             <li className={styles.headerItemResponsive}><Link to="/" onClick={this.handleHamburgerClick}>中文</Link> </li>
             <li className={styles.headerItemResponsive}>
               <a className={styles.socialIcon} href="https://www.facebook.com/groups/1594251577470003/" target="_blank"><img src={socialFacebook} /></a>
-              <a className={styles.socialIcon} href="mailto:xxx@mail.com" target="_blank"><img src={socialEmail} /></a>
+              <a className={styles.socialIcon} href="https://github.com/hsin421/g0vnyc-landing" target="_blank"><img src={socialGithub} /></a>
+              <a className={styles.socialIcon} href="mailto:pr@g0vnyc.org"><img src={socialEmail} /></a>
             </li>
           </ul>
         }
