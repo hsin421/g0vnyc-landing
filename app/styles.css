@@ -319,8 +319,9 @@ a:hover {
 .hamburger {
   font-size: 30px;
   position: absolute;
-  left: 90%;
+  right: 0%;
   top: 10px;
+  margin-right: 10px;
   display: none;
   cursor: pointer;
 }
@@ -336,6 +337,14 @@ a:hover {
 .headerItemResponsive {
   padding: 10px 20px;
   border-bottom: 1px solid #DDD;
+}
+
+.headerItemResponsive a {
+  color: #444;
+}
+
+.headerItemResponsive a:hover {
+  color: #009c00;
 }
 
 /* Schedule Page */
@@ -405,13 +414,13 @@ a:hover {
 
 /* End schedule page */
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .dropDownUl {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .appBarNav, .appBarExtra {
     display: none;
   }
