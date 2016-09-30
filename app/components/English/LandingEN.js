@@ -21,7 +21,7 @@ export default class LandingEN extends React.Component {
   render() {
     return (
       <div>
-        <div className={styles.hero} />
+        <div className={styles.hero}><img src="7ac319ad230437228aeb7f97d377abaf.jpg" className={styles.heroImg}/></div>
         <Container className={styles.landingBody}>
         	<Row>
 	          <Col md="8" md-offset="2">
@@ -73,84 +73,94 @@ export default class LandingEN extends React.Component {
               </a>
             </Col>
           </Row>
-          <Row>
-            <div className={styles.sponsor}>
-          	  <Col md="4" md-offset="4">
-                <img src={sponsorIcon} className={styles.icon} />
-              	<h3 className={styles.heading}> Sponsor Us</h3>
-              	<p className={styles.bodyTextWhite}> 
-              		Hackathons don't host themselves. We need all the help we can get! 
-                  Our invited speakers fly from all over the world to NYC. 
-              		We reimburse out-of-state hackers and at the event, dishes of Taiwanese delicacies will flow in endless supply. 
-              		Chip in to help make this an unforgettable experience for our hackers, speakers and staff!
-              	</p>
-              	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
-              		target="_blank">
-              		<Button color="accent">Donate</Button>
-              	</a>
+        </Container>
+        <div className={styles.sponsorBg}>
+          <Container className={styles.landingBody}>
+            <Row>
+              <div className={styles.sponsor}>
+            	  <Col md="6" md-offset="3">
+                  <img src={sponsorIcon} className={styles.icon} />
+                	<h3 className={styles.heading}> Sponsor Us</h3>
+                	<p className={styles.bodyTextWhite}> 
+                		Hackathons don't host themselves. We need all the help we can get! 
+                    Our invited speakers fly from all over the world to NYC. 
+                		We reimburse out-of-state hackers and at the event, dishes of Taiwanese delicacies will flow in endless supply. 
+                		Chip in to help make this an unforgettable experience for our hackers, speakers and staff!
+                	</p>
+                	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
+                		target="_blank">
+                		<Button color="accent">Donate</Button>
+                	</a>
+                </Col>
+              </div>
+            </Row>
+          </Container>
+        </div>
+        <div className={styles.speakerBg}>
+          <Container className={styles.landingBody}>
+            <Row className={styles.speakerHeader}>
+  	          <Col md="4" md-offset="4">
+  	    	  		<img src={speakersIcon} className={styles.icon} />
+  	      			<h3 className={styles.heading}> Speakers </h3>
+  	      		</Col>
+  	      	</Row>
+  	      	<Row className={styles.speakerSection}>
+  	      		<Col md="4">
+                <div className={styles.speakerCard}>
+                  <div className={styles.speakerImgLin}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+  	      			   <h5 className={styles.speakerTitle}>Billy Lin</h5>
+                   <p className={styles.speakerSubtitle}>Judicial Reform Foundation, Taiwan</p>
+                   <p className={styles.speakerSubtitle}>Committee of Ill Gotten Party Assets, Executive Yuan, Taiwan</p>
+                  </div>
+                </div>
+  	      		</Col>
+  	      		<Col md="4">
+  	      			<div className={styles.speakerCard}>
+                  <div className={styles.speakerImgKao}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>CL Kao</h5>
+                   <p className={styles.speakerSubtitle}>G0V Founder</p>
+                   <p className={styles.speakerSubtitle}>Taiwanese open source community</p>
+                  </div>
+                </div>
+  	      		</Col>
+  	      		<Col md="4">
+  	      			<div className={styles.speakerCard}>
+                  <div className={styles.speakerImgNicklin}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>Andrew Nicklin</h5>
+                   <p className={styles.speakerSubtitle}>Center for Gov. Excellence, JHU</p>
+                   <p className={styles.speakerSubtitle}>Former Director, Open NY</p>
+                  </div>
+                </div>
+  	      		</Col>
+  	      		{/*<Button color="primary" className={styles.speakerButton}>認識講者</Button>*/}
+        		</Row>
+            <Row className={styles.speakerSection}>
+              <p className={styles.bodyTextBold}>There's More...</p>
+              <p className={styles.bodyText}>11.4 Friday Night Cafe Philo「Hackaton Series」Speaker</p>
+              <Col md="4" md-offset="4">
+                <div className={styles.speakerCard}>
+                  <div className={styles.speakerImgLi}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>Li, Wu-Hsi</h5>
+                   <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
+                   <p className={styles.speakerSubtitle}>InMusic Founder</p>
+                  </div>
+                </div>
               </Col>
-            </div>
-          </Row>
-          <Row className={styles.speakerHeader}>
-	          <Col md="4" md-offset="4">
-	    	  		<img src={speakersIcon} className={styles.icon} />
-	      			<h3 className={styles.heading}> Speakers </h3>
-	      		</Col>
-	      	</Row>
-	      	<Row className={styles.speakerSection}>
-	      		<Col md="4">
-              <div className={styles.speakerCard}>
-                <div className={styles.speakerImgLin}>
-                </div>
-                <div className={styles.speakerInfo}>
-	      			   <h5 className={styles.speakerTitle}>Billy Lin</h5>
-                 <p className={styles.speakerSubtitle}>Judicial Reform Foundation, Taiwan</p>
-                 <p className={styles.speakerSubtitle}>Committee of Ill Gotten Party Assets, Executive Yuan, Taiwan</p>
-                </div>
-              </div>
-	      		</Col>
-	      		<Col md="4">
-	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImgKao}>
-                </div>
-                <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>CL Kao</h5>
-                 <p className={styles.speakerSubtitle}>G0V Founder</p>
-                 <p className={styles.speakerSubtitle}>Taiwanese open source community</p>
-                </div>
-              </div>
-	      		</Col>
-	      		<Col md="4">
-	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImgNicklin}>
-                </div>
-                <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>Andrew Nicklin</h5>
-                 <p className={styles.speakerSubtitle}>Center for Gov. Excellence, JHU</p>
-                 <p className={styles.speakerSubtitle}>Former Director, Open NY</p>
-                </div>
-              </div>
-	      		</Col>
-	      		{/*<Button color="primary" className={styles.speakerButton}>認識講者</Button>*/}
-      		</Row>
-          <Row className={styles.speakerSection}>
-            <p className={styles.bodyTextBold}>There's More...</p>
-            <p className={styles.bodyText}>11.4 Friday Night Cafe Philo「Hackaton Series」Speaker</p>
-            <Col md="4" md-offset="4">
-              <div className={styles.speakerCard}>
-                <div className={styles.speakerInfo}>
-                 <div className={styles.speakerImgLi}>
-                 </div>
-                 <h5 className={styles.speakerTitle}>Li, Wu-Hsi</h5>
-                 <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
-                 <p className={styles.speakerSubtitle}>InMusic Founder</p>
-                </div>
-              </div>
-            </Col>
-            <Col md="12">
-              <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>More on Speakers</Button></Link>
-            </Col>
-          </Row>
+              <Col md="12">
+                <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>More on Speakers</Button></Link>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <Container className={styles.landingBody}>
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> Host </h3>

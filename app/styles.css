@@ -2,16 +2,34 @@ body {
   font-family: freight-sans-pro, sans-serif 
 }
 
+a {
+  color: #009c00;
+}
+
+a:hover {
+  color: #007e00;
+}
+
 /* App nav bar */
 
 .bar {
-  padding: 0 20px;
   border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.appBarLogo {
+  display: inline-block;
+  width: 165px;
 }
 
 .appBarNav {
   padding-top: 15px;
   font-size: 15px;
+}
+
+.appBarExtra {
+  padding-top: 15px;
+  font-size: 15px;
+  text-align: right;
 }
 
 .navLink {
@@ -45,11 +63,35 @@ body {
 }
 
 .langLink {
+  display: inline-block;
   line-height: 35px;
+  color: #444;
 }
 
 .langLink:hover {
   text-decoration: underline;
+  color: #009c00;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+}
+
+.socialIcon img{
+  width: 100%;
+  height: 100%;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* End nav bar */
@@ -65,18 +107,38 @@ body {
 }
 
 .hero {
-  background: url('./images/home_cover.jpg') no-repeat center center;
-  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroImg {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .heroImg {
+    margin-left: -40%;
+    width: 180%;
+    max-width: none;
+  }
 }
 
 .sponsor {
-  composes: hero;
   width: 100%;
-  background: url('./images/g0v_nyc_green_texture.jpg') no-repeat center center;
-  background-attachment: fixed;
-  background-size: cover;
   display: flex;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.sponsorBg {
+  background: url('./images/g0v_nyc_green_texture.jpg') no-repeat center center;
+  background-size: 50%;
+  background-attachment: fixed;
+  background-size: 600px 600px;
+  background-repeat: repeat;
   margin-top: 30px;
 }
 
@@ -149,13 +211,17 @@ body {
   background-color: #efedee;
 }
 
+.speakerBg {
+  background-color: #efedee;
+}
+
 .speakerHeader {
   padding-top: 30px;
 }
 
 .speakerCard {
-  height: 450px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .speakerImg {
@@ -165,7 +231,8 @@ body {
 
 .speakerInfo {
   background-color: #fff;
-  padding: 8px 15px;
+  padding: 15px 20px;
+  min-height: 140px;
 }
 
 .speakerTitle {
@@ -249,22 +316,25 @@ body {
   left: 90%;
   top: 10px;
   display: none;
+  cursor: pointer;
 }
 
 .dropDownUl {
   list-style: none;
   font-size: 16px;
   color: #444;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .headerItemResponsive {
-  padding: 5px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDD;
 }
 
 /* Schedule Page */
 
 .scheduleControl {
-  height: 40px;
   border-bottom: 3px solid #009c00;
   background-color: rgba(0,0,0,.12);
   display: flex;
@@ -272,10 +342,9 @@ body {
 
 .scheduleDate {
   font-size: 16px;
+  line-height: 1;
   font-weight: 700;
-  width: 90px;
-  padding-top: 11px;
-  padding-left: 26px;
+  padding: 16px 28px;
   cursor: pointer;
   color: #444;
 }
@@ -330,18 +399,23 @@ body {
 
 /* End schedule page */
 
-@media (min-width: 501px) {
+@media (min-width: 769px) {
   .dropDownUl {
     display: none;
   }
 }
 
-@media (max-width: 500px) {
-  .appBarNav {
+@media (max-width: 768px) {
+  .appBarNav, .appBarExtra {
     display: none;
   }
 
   .hamburger {
     display: block;
+  }
+
+  .socialIcon {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
