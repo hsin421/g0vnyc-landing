@@ -53,16 +53,16 @@ export default class LandingCH extends React.Component {
             	<h4 className={styles.infoLabel}>資訊</h4>
             	<p className={styles.bodyTextBold}> 11/5 (Sat) - 11/6 (Sun) </p>
             	<p className={styles.bodyText}>
-                <a href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43' target="_blank">
-                  {'Forecast. '}
+                <a className={styles.linkDecorated} href='http://www.accuweather.com/en/us/new-york-ny/10007/daily-weather-forecast/349727?day=43' target="_blank">
+                  Forecast
                 </a>
-                  Working overnight is optional.
+                  {' Working'} overnight is optional.
               </p>
             	<h4 className={styles.infoLabel}>地點</h4>
             	<p className={styles.bodyTextBold}>NYC WeWork Times Square</p>
-            	<p className={styles.bodyText}>1460 Broadway, NY 10036  
-                <a href="https://www.google.com/maps/place/1460+Broadway,+New+York,+NY+10036/@40.7551113,-73.9884183,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ab29218823:0x9ed7f9958f0596ca!8m2!3d40.7551073!4d-73.9862243" target="_blank">
-                 {' Map'}
+            	<p className={styles.bodyText}>1460 Broadway, NY {'10036 '}  
+                <a className={styles.linkDecorated} href="https://www.google.com/maps/place/1460+Broadway,+New+York,+NY+10036/@40.7551113,-73.9884183,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259ab29218823:0x9ed7f9958f0596ca!8m2!3d40.7551073!4d-73.9862243" target="_blank">
+                 Map
                 </a>
               </p>
             	<h4 className={styles.infoLabel}>招募對象</h4>

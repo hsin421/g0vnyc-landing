@@ -2,6 +2,11 @@ body {
   font-family: freight-sans-pro, sans-serif 
 }
 
+.linkDecorated {
+  text-decoration: underline;
+  color: #333;
+}
+
 /* App nav bar */
 
 .bar {

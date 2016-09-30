@@ -45,6 +45,7 @@ export default class ChPages extends React.Component {
               </span>
             </Col>
             <Col md="6" className={styles.appBarNav}>
+              <Link to="/en" className={styles.navLink}>Home</Link>
               <Link to="/en/schedule" className={styles.navLink} activeClassName={styles.navLinkSelected}>Schedule</Link>
               <Link to="/en/speakers" className={styles.navLink} activeClassName={styles.navLinkSelected}>Speakers</Link>
               <Link to="/en/staff" className={styles.navLink} activeClassName={styles.navLinkSelected}>Staff</Link>
@@ -65,6 +66,7 @@ export default class ChPages extends React.Component {
         {
           this.state.showMenu &&
           <ul className={styles.dropDownUl}>
+            <li className={styles.headerItemResponsive}><Link to="/en" onClick={this.handleHamburgerClick}>Home</Link> </li>
             <li className={styles.headerItemResponsive}><Link to="/en/schedule" onClick={this.handleHamburgerClick}>Schedule</Link> </li>
             <li className={styles.headerItemResponsive}><Link to="/en/speakers" onClick={this.handleHamburgerClick}>Speakers</Link> </li>
             <li className={styles.headerItemResponsive}><Link to="/en/staff" onClick={this.handleHamburgerClick}>Staff</Link> </li>
