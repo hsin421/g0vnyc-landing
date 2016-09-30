@@ -22,7 +22,7 @@ export default class LandingCH extends React.Component {
   render() {
     return (
       <div>
-        <div className={styles.hero} />
+        <div className={styles.hero}><img src="7ac319ad230437228aeb7f97d377abaf.jpg" className={styles.heroImg}/></div>
         <Container className={styles.landingBody}>
         	<Row>
 	          <Col md="8" md-offset="2">
@@ -76,80 +76,90 @@ export default class LandingCH extends React.Component {
               </a>
             </Col>
           </Row>
-          <Row>
-            <div className={styles.sponsor}>
-          	  <Col md="4" md-offset="4">
-                <img src={sponsorIcon} className={styles.icon} />
-              	<h3 className={styles.heading}> 贊助我們 </h3>
-              	<p className={styles.bodyTextWhite}> 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述目標更近⼀步。
-活動結束後，我們會將財務明細以及成果報告⽤電⼦郵件的⽅式寄給貴組織，
-持續分享各個專案的開發進度與成果。</p>
-              	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
-              		target="_blank">
-              		<Button color="accent">贊助資訊</Button>
-              	</a>
+        </Container>
+        <div className={styles.sponsorBg}>
+          <Container className={styles.landingBody}>
+            <Row>
+              <div className={styles.sponsor}>
+            	  <Col md="6" md-offset="3">
+                  <img src={sponsorIcon} className={styles.icon} />
+                	<h3 className={styles.heading}> 贊助我們 </h3>
+                	<p className={styles.bodyTextWhite}> 不論⾦額的⼤⼩，您的⽀持都讓我們距離上述目標更近⼀步。
+  活動結束後，我們會將財務明細以及成果報告⽤電⼦郵件的⽅式寄給貴組織，
+  持續分享各個專案的開發進度與成果。</p>
+                	<a href="https://www.generosity.com/volunteer-fundraising/g0v-at-nyc-first-ever-hackathon" 
+                		target="_blank">
+                		<Button color="accent">贊助資訊</Button>
+                	</a>
+                </Col>
+              </div>
+            </Row>
+          </Container>
+        </div>
+        <div className={styles.speakerBg}>
+          <Container className={styles.landingBody}>
+            <Row className={styles.speakerHeader}>
+  	          <Col md="4" md-offset="4">
+  	    	  		<img src={speakersIcon} className={styles.icon} />
+  	      			<h3 className={styles.heading}> 邀請講者 </h3>
+  	      		</Col>
+  	      	</Row>
+  	      	<Row className={styles.speakerSection}>
+  	      		<Col md="4">
+                <div className={styles.speakerCard}>
+                  <div className={styles.speakerImgLin}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+  	      			   <h5 className={styles.speakerTitle}>林雨蒼</h5>
+                   <p className={styles.speakerSubtitle}>民間司法改革基金會</p>
+                   <p className={styles.speakerSubtitle}>行政院不當黨產委員會</p>
+                  </div>
+                </div>
+  	      		</Col>
+  	      		<Col md="4">
+  	      			<div className={styles.speakerCard}>
+                  <div className={styles.speakerImgKao}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>高嘉良</h5>
+                   <p className={styles.speakerSubtitle}>G0V 創始人</p>
+                   <p className={styles.speakerSubtitle}>台灣開源社群 長老</p>
+                  </div>
+                </div>
+  	      		</Col>
+  	      		<Col md="4">
+  	      			<div className={styles.speakerCard}>
+                  <div className={styles.speakerImgNicklin}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>Andrew Nicklin</h5>
+                   <p className={styles.speakerSubtitle}>Center for Gov. Excellence, JHU</p>
+                   <p className={styles.speakerSubtitle}>Former Director, Open NY</p>
+                  </div>
+                </div>
+  	      		</Col>
+        		</Row>
+            <Row className={styles.speakerSection}>
+              <p className={styles.bodyTextBold}>同場加映</p>
+              <p className={styles.bodyText}>11.4 週五晚上 哲學星期五「黑客松系列講座」講者</p>
+              <Col md="4" md-offset="4">
+                <div className={styles.speakerCard}>
+                  <div className={styles.speakerImgLi}>
+                  </div>
+                  <div className={styles.speakerInfo}>
+                   <h5 className={styles.speakerTitle}>李務熙</h5>
+                   <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
+                   <p className={styles.speakerSubtitle}>InMusic 創辦人</p>
+                  </div>
+                </div>
               </Col>
-            </div>
-          </Row>
-          <Row className={styles.speakerHeader}>
-	          <Col md="4" md-offset="4">
-	    	  		<img src={speakersIcon} className={styles.icon} />
-	      			<h3 className={styles.heading}> 邀請講者 </h3>
-	      		</Col>
-	      	</Row>
-	      	<Row className={styles.speakerSection}>
-	      		<Col md="4">
-              <div className={styles.speakerCard}>
-                <div className={styles.speakerImgLin}>
-                </div>
-                <div className={styles.speakerInfo}>
-	      			   <h5 className={styles.speakerTitle}>林雨蒼</h5>
-                 <p className={styles.speakerSubtitle}>民間司法改革基金會</p>
-                 <p className={styles.speakerSubtitle}>行政院不當黨產委員會</p>
-                </div>
-              </div>
-	      		</Col>
-	      		<Col md="4">
-	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImgKao}>
-                </div>
-                <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>高嘉良</h5>
-                 <p className={styles.speakerSubtitle}>G0V 創始人</p>
-                 <p className={styles.speakerSubtitle}>台灣開源社群 長老</p>
-                </div>
-              </div>
-	      		</Col>
-	      		<Col md="4">
-	      			<div className={styles.speakerCard}>
-                <div className={styles.speakerImgNicklin}>
-                </div>
-                <div className={styles.speakerInfo}>
-                 <h5 className={styles.speakerTitle}>Andrew Nicklin</h5>
-                 <p className={styles.speakerSubtitle}>Center for Gov. Excellence, JHU</p>
-                 <p className={styles.speakerSubtitle}>Former Director, Open NY</p>
-                </div>
-              </div>
-	      		</Col>
-      		</Row>
-          <Row className={styles.speakerSection}>
-            <p className={styles.bodyTextBold}>同場加映</p>
-            <p className={styles.bodyText}>11.4 週五晚上 哲學星期五「黑客松系列講座」講者</p>
-            <Col md="4" md-offset="4">
-              <div className={styles.speakerCard}>
-                <div className={styles.speakerInfo}>
-                 <div className={styles.speakerImgLi}>
-                 </div>
-                 <h5 className={styles.speakerTitle}>李務熙</h5>
-                 <p className={styles.speakerSubtitle}>MIT Media Lab PhD</p>
-                 <p className={styles.speakerSubtitle}>InMusic 創辦人</p>
-                </div>
-              </div>
-            </Col>
-            <Col md="12">
-              <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>認識講者</Button></Link>
-            </Col>
-          </Row>
+              <Col md="12">
+                <Link to="/speakers"><Button color="primary" className={styles.speakerButton}>認識講者</Button></Link>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <Container className={styles.landingBody}>
       		<Row>
       			<Col md="4" md-offset="4">
       				<h3 className={styles.heading}> 主辦單位 </h3>
