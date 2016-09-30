@@ -48,7 +48,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Designers</h3>
-                <p className={styles.bodyText}>Meng Chih Chien, Angel Chen, Tim Lee, Chien-Ju Peng </p>
+                <p className={styles.bodyText}><a href="http://mengchih.com/" target="_blank" >Meng Chih Chiang</a>, Angel Chen, Tim Lee, Chien-Ju Peng </p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
