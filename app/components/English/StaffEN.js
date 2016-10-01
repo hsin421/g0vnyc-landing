@@ -36,7 +36,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Directors</h3>
-                <p className={styles.bodyText}>Edward Yen-Ting Liu, Hsin Hsiao </p>
+                <p className={styles.bodyText}>Edward Yen-Ting Liu, <a className={styles.linkDecorated} href="https://www.linkedin.com/in/hsin-hsiao-1a43551b" target="_blank" >Hsin Hsiao</a> </p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
@@ -48,7 +48,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Designers</h3>
-                <p className={styles.bodyText}><a className={styles.linkDecorated} href="http://mengchih.com/" target="_blank" >Meng Chih Chiang</a>, Angel Chen, Tim Lee, Chien-Ju Peng </p>
+                <p className={styles.bodyText}><a className={styles.linkDecorated} href="http://mengchih.com/" target="_blank" >Meng Chih Chiang</a>, Angel Chen, Tim Lee, <a className={styles.linkDecorated} href="https://www.linkedin.com/in/cjpdesign" target="_blank" >Chien-Ju Peng</a> </p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
