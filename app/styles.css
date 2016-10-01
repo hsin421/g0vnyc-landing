@@ -1,5 +1,13 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+html, body {
+  font-style: 15px;
+}
+
 body {
-  font-family: freight-sans-pro, sans-serif 
+  font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,Heiti TC,Apple LiGothic Medium,\\5FAE\8EDF\6B63\9ED1\9AD4,sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 a {
