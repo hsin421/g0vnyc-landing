@@ -1,5 +1,13 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+html, body {
+  font-style: 15px;
+}
+
 body {
-  font-family: freight-sans-pro, sans-serif 
+  font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,Heiti TC,Apple LiGothic Medium,\\5FAE\8EDF\6B63\9ED1\9AD4,sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 
@@ -319,8 +327,9 @@ a:hover {
 .hamburger {
   font-size: 30px;
   position: absolute;
-  left: 90%;
+  right: 0%;
   top: 10px;
+  margin-right: 10px;
   display: none;
   cursor: pointer;
 }
@@ -336,6 +345,14 @@ a:hover {
 .headerItemResponsive {
   padding: 10px 20px;
   border-bottom: 1px solid #DDD;
+}
+
+.headerItemResponsive a {
+  color: #444;
+}
+
+.headerItemResponsive a:hover {
+  color: #009c00;
 }
 
 /* Schedule Page */
@@ -405,13 +422,13 @@ a:hover {
 
 /* End schedule page */
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .dropDownUl {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .appBarNav, .appBarExtra {
     display: none;
   }
