@@ -63,9 +63,8 @@ export default class ChPages extends React.Component {
               </Col>
               <Col md="3" className={styles.appBarExtra}>
                 <Link className={styles.langLink} to="/en">ENGLISH</Link>
-                <a className={styles.socialIcon} href="https://www.facebook.com/groups/1594251577470003/" target="_blank"><img src={socialFacebook} /></a>
+                <a className={styles.socialIcon} href="https://www.facebook.com/g0vus/" target="_blank"><img src={socialFacebook} /></a>
                 <a className={styles.socialIcon} href="https://github.com/hsin421/g0vnyc-landing" target="_blank"><img src={socialGithub} /></a>
-                <a className={styles.socialIcon} href="mailto:pr@g0vnyc.org"><img src={socialEmail} /></a>
               </Col>
             </Row>
           </div>

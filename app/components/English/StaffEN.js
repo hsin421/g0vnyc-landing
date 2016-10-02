@@ -36,7 +36,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Directors</h3>
-                <p className={styles.bodyText}>Edward Yen-Ting Liu, <a className={styles.linkDecorated} href="https://www.linkedin.com/in/hsin-hsiao-1a43551b" target="_blank" >Hsin Hsiao</a> </p>
+                <p className={styles.bodyText}><a className={styles.linkDecorated} href="https://www.linkedin.com/in/yen-ting-liu-4121597b" target="_blank" >Edward Yen-Ting Liu</a>, <a className={styles.linkDecorated} href="https://www.linkedin.com/in/hsin-hsiao-1a43551b" target="_blank" >Hsin Hsiao</a> </p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
