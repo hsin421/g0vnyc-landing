@@ -36,7 +36,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Directors</h3>
-                <p className={styles.bodyText}><a className={styles.linkDecorated} href="https://www.linkedin.com/in/yen-ting-liu-4121597b" target="_blank" >Edward Yen-Ting Liu</a>, <a className={styles.linkDecorated} href="https://www.linkedin.com/in/hsin-hsiao-1a43551b" target="_blank" >Hsin Hsiao</a> </p>
+                <p className={styles.bodyText}><a className={styles.linkDecorated} href="https://www.linkedin.com/in/yen-ting-liu-4121597b" target="_blank" >Edward Yen-Ting Liu</a>, <a className={styles.linkDecorated} href="https://github.com/hsin421" target="_blank" >Hsin Hsiao</a> </p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
@@ -60,7 +60,7 @@ export default class Staff extends React.Component {
             <Col md="8" md-offset="2">
               <div className={styles.staffCard}>
                 <h3 className={styles.staffCardHeading}>Event Planners</h3>
-                <p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, Alice Chen, Kuo B</p>
+                <p className={styles.bodyText}>Darren Yang, Jen-Po Cheng, Hsiao-Ya, Linda, <a className={styles.linkDecorated} href="https://github.com/chena" target="_blank" >Alice Chen</a>, Kuo B</p>
               </div>
             </Col>
             <Col md="8" md-offset="2">
