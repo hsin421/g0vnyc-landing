@@ -36,6 +36,7 @@ export default class LandingCH extends React.Component {
               		target="_blank">
             		<Button color="primary">我要報名</Button>
             	</a>
+              <Link to="/schedule"><Button color="primary">活動內容</Button></Link>
 	          </Col>
           </Row>
           <Divider />

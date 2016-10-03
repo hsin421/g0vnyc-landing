@@ -40,8 +40,9 @@ export default class LandingEN extends React.Component {
               </p>
               <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
               		target="_blank">
-            		<Button color="primary">Registration</Button>
+            		<Button color="primary">Tickets</Button>
             	</a>
+              <Link to="/en/schedule"><Button color="primary">Schedule</Button></Link>
 	          </Col>
           </Row>
           <Divider />
@@ -75,7 +76,7 @@ export default class LandingEN extends React.Component {
             	<p className={styles.bodyTextBold}>You and your love for open gov / open data</p>
             	<p className={styles.bodyText}>...and your laptop</p>
             	<h4 className={styles.infoLabel}>How about food, overnight stay, or travel grant？</h4>
-            	<p className={styles.bodyText}>We wrote a chatbot to answer them. Give it a try！</p>
+            	<p className={styles.bodyText}>We wrote a chatbot to answer all your questions. Give it a try！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
               	<Button color="primary">Say Hello to our bot</Button>
