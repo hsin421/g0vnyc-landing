@@ -26,8 +26,14 @@ export default class LandingEN extends React.Component {
         	<Row>
 	          <Col md="8" md-offset="2">
   	          <h3 className={styles.heading}> 2016 g0v hackathon @ NYC</h3>
-  	          <p className={styles.bodyText}> g0v.tw is an online community that pushes information transparency, focusing on developing information platform and tools for the citizens to participate in society.
-  	          Substituting the “o” with “0″ in gov, the new “g0v” not only stands for rethinking the role that the government plays from the bottom up, but also represents the world view of 0 and 1 in the digital natives generation. Based on the spirit of open source, g0v cares about freedom of speech and open data, writing code to provide citizens the easy-to-use information service. The transparency of information can help citizens to have a better understanding on how the government works, to understand the issues faster and to avoid media monopoly, so they can monitor the government more efficiently, and become involved in actions and finally deepen the quality of democracy.
+  	          <p className={styles.bodyText}> 
+                Have you had an idea to make society a better place but are having trouble finding buddies to work on it with?
+               </p>
+               <p className={styles.bodyText}> 
+                Do you have the programming skills and have been thirsting to show it off?
+               </p> 
+               <p className={styles.bodyText}> 
+                Do you possess UI/UX or design talent and want to show it to the world?
   	          </p>
               <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
               		target="_blank">
