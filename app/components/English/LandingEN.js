@@ -69,7 +69,7 @@ export default class LandingEN extends React.Component {
             	<p className={styles.bodyText}>We wrote a chatbot to answer them. Give it a try！</p>
             	<a href="https://m.me/g0vus" 
               		target="_blank">
-              	<Button color="primary">Say hi our bot</Button>
+              	<Button color="primary">Say Hello to our bot</Button>
               </a>
             </Col>
           </Row>
