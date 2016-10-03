@@ -27,7 +27,7 @@ export default class LandingEN extends React.Component {
 	          <Col md="8" md-offset="2">
   	          <h3 className={styles.heading}> 2016 g0v hackathon @ NYC</h3>
   	          <p className={styles.bodyText}> 
-                Have you had an idea to make society a better place but are having trouble finding buddies to work on it with?
+                Have you had ideas to make society a better place but are having trouble finding buddies to work with?
                </p>
                <p className={styles.bodyText}> 
                 Do you have the programming skills and have been thirsting to show it off?
@@ -35,6 +35,9 @@ export default class LandingEN extends React.Component {
                <p className={styles.bodyText}> 
                 Do you possess UI/UX or design talent and want to show it to the world?
   	          </p>
+              <p className={styles.bodyTextBold}>
+                Society improvement and government oversight has no national boundaries. Come to the g0v hackathon and work hand in hand to make both America and Taiwan great.
+              </p>
               <a href="https://www.eventbrite.com/e/g0v-hackathon-nyc-tickets-27621197746" 
               		target="_blank">
             		<Button color="primary">Registration</Button>
