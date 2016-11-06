@@ -17,12 +17,18 @@ import logo from '../../images/organized_g0v.png';
 import logoDark from '../../images/g0v_logo_dark.png';
 import cafePhiloLogo from '../../images/organized_cafe_philo.png';
 
+const MONTH = 10;
+const DAYS = [4, 5, 6];
+
 export default class ScheduleCH extends React.Component {
   constructor(props) {
     super(props);
+    const today = new Date();
+    const selectedDate = today.getMonth() === MONTH && DAYS.includes(today.getDate()) ?
+      today.getDate() : 5;
     this.state = {
-      selectedDate: 5
-    }
+      selectedDate
+    };
   }
 
   handleSelectDate = (date) => {
